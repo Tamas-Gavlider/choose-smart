@@ -1,8 +1,10 @@
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*Standard style for body*/
 body {
     margin: 0;
     padding: 0;
-}
-
-.bg-img{
-    background-image: url('assets/images/pexels-pixabay-66877.webp');
+    font-family: 'Old+Standard+TT', sans-serif;
 }
