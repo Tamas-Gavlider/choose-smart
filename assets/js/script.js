@@ -1,3 +1,4 @@
+// Get user name and age and submit details to start the game
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('entry').addEventListener('submit', getStarted);
 });
@@ -13,4 +14,10 @@ function getStarted(event) {
     <a href='game.html'>Start game</a>`;
 
 };
+
+// User choices
+const choice1 = document.getElementById('choice1');
+const choice2 = document.getElementById('choice2');
+const choice3 = document.getElementById('choice3');
+const choice4 = document.getElementById('choice4');
 
