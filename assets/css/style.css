@@ -10,6 +10,7 @@ body {
     letter-spacing: 1px;
 }
 
+/*Flex for the game page*/
 #game {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,10 @@ body {
     align-items: center;
 }
 
+/*Style for the buttons on the game page*/
 .choices-btn {
     letter-spacing: 1px;
+    margin-top: 150px;
+    padding-bottom: 5px;
 
 }
