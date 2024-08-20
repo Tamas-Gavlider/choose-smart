@@ -21,9 +21,9 @@ body {
 }
 
 /*Style for the buttons on the game page*/
-.choices-btn {
+.choice-btn {
     letter-spacing: 1px;
-    margin-top: 150px;
+    margin-top: 10px;
     padding-bottom: 5px;
 
 }

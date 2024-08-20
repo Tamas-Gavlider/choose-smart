@@ -22,86 +22,16 @@ const choice2 = document.getElementById('choice2');
 const choice3 = document.getElementById('choice3');
 const choice4 = document.getElementById('choice4');
 
-const decisions = {
-    'a' : {
-        'aa' : "What to do?",
-        'ab' : "Text",
-        "ac" : "Text2",
-        "ad" : 'Another text'
-    },
-    'b' : {
-        'ba' : "Text b",
-        'bb' : 'Text bb',
-        'bc' : 'text bc'
-    },
-
-    'c' : {
-        'ca' : "Text c",
-        'cb' : 'Text cb',
-        'cc' : 'Text cc'
-
-    }
-}
-
-
-const firstChoices = ['Stay home','Go shopping','Cook something']
-
-function firstOption(){
-    choice1.textContent = firstChoices[0];
-    choice2.textContent = firstChoices[1];
-    choice3.textContent = firstChoices[2];
+if(choice4.textContent === ''){
     choice4.style.display = 'none';
-
 }
 
-
-
-let selectedChoice = '';
-let buttons = document.getElementsByClassName('choice-btn');
-
-// Function to handle button clicks
-function handleButtonClick(event) {
-    // Store the clicked button's ID
-    selectedChoice = event.target.id;
-    
-    // Check which button was clicked using an if statement
-    if (selectedChoice === "choice1") {
-        // Function to handle button clicks
-function handleButtonClick(event) {
-    // Store the clicked button's ID
-    selectedChoice = event.target.id;
-    
-    // Check which button was clicked using an if statement
-    if (selectedChoice === "choice1") {
-        document.getElementById('result').innerHTML = "You chose the first choice!";
-    } else if (selectedChoice === "choice2") {
-        document.getElementById('result').innerHTML = "You chose the second choice!";
-    } else if (selectedChoice === "choice3") {
-        document.getElementById('result').innerHTML = "You chose the third choice!";
-    } else if (selectedChoice === "choice4") {
-        document.getElementById('result').innerHTML = "You chose the fourth choice!";
-    }
-}
-
-// Attach event listeners to each button
-buttons.forEach(button => {
-    button.addEventListener('click', handleButtonClick);
-});
-    } else if (selectedChoice === "choice2") {
-        document.getElementById('result').innerHTML = "You chose the second choice!";
-    } else if (selectedChoice === "choice3") {
-        document.getElementById('result').innerHTML = "You chose the third choice!";
-    } else if (selectedChoice === "choice4") {
-        document.getElementById('result').innerHTML = "You chose the fourth choice!";
-    }
-}
-
+/*
 // Attach event listeners to each button
 for(button of buttons){
     button.addEventListener('click', handleButtonClick);
 };
 
-/*
 for (const [key, value] of Object.entries(questions)) {
   console.log(key, value);
 }
