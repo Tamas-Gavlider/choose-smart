@@ -22,9 +22,10 @@ const choice2 = document.getElementById('choice2');
 const choice3 = document.getElementById('choice3');
 const choice4 = document.getElementById('choice4');
 
-if(choice4.textContent === ''){
+if(choice4.value === ''){
     choice4.style.display = 'none';
 }
+
 
 /*
 // Attach event listeners to each button
