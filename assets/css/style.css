@@ -8,12 +8,15 @@ body {
     padding: 0;
     font-family: 'Old+Standard+TT', sans-serif;
     letter-spacing: 1px;
+    color:rgb(51, 49, 49);
+    background-color:salmon;
 }
 
 /*BG image on game page at the beginning*/
 
 #game-body{
     background-color:salmon;
+    color:rgb(51, 49, 49);
 }
 /*Flex for the game page*/
 #game {
