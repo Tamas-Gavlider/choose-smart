@@ -266,6 +266,7 @@ const gameData = {
     }
 };
 
+/*
 for (const key in gameData) {
     if (gameData.hasOwnProperty(key)) {  // Check if the key is a direct property of the object
       const choice = gameData[key];
@@ -274,23 +275,25 @@ for (const key in gameData) {
       console.log(`Choices:`, choice.choices);
     }
   }
+*/
 
 // Get user name and age and submit details to start the game
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('entry').addEventListener('submit', getStarted);
-});
 
 function getStarted(event) {
-    event.preventDefault();
+  event.preventDefault();
     let name = document.getElementById('name').value;
     let age = document.getElementById('age').value;
-    let div = document.getElementById('welcome-message');
-    div.innerHTML = `<p>Hello ${name}!You had ${age} years to learn that all your actions have consequences!</p>
+    let div = document.getElementById('player-details');
+    div.innerHTML = `<p>Hello ${name}! You had ${age} years to learn that all your actions have consequences!</p>
     <p>Are you ready to play?</p>
     <a href='instructions.html'>How to play?</a>
     <a href='game.html'>Start game</a>`;
-
+  
 };
+let form = document.getElementById('entry');
+if(form){
+  form.addEventListener('submit', getStarted);
+}
 
 
 // User choices
@@ -299,10 +302,13 @@ const choice2 = document.getElementById('choice2');
 const choice3 = document.getElementById('choice3');
 const choice4 = document.getElementById('choice4');
 
-if(choice4.value === ''){
-    choice4.style.display = 'none';
+// Remove button if it is empty
+let buttons = document.getElementsByClassName('choice-btn');
+for( let i = 0; i < buttons.length; i ++){
+  if(buttons[i].textContent.trim() === ""){
+    buttons[i].style.display = 'none';
+  }
 }
-
 
 /*
 // Attach event listeners to each button

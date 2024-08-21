@@ -10,9 +10,38 @@ body {
     letter-spacing: 1px;
     color:rgb(51, 49, 49);
     background-color:salmon;
+    margin-left: 5px;
+    
 }
 
-/*BG image on game page at the beginning*/
+/*Style for the index html*/
+
+#player-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#player-details p {
+    margin-left: 5px;
+}
+
+#player-details a {
+    margin-left: 5px;
+}
+
+/*Style the name and age form on index*/
+#entry {
+    margin-left: 5px;
+}
+
+#name {
+    margin-right: 50px;
+    margin-left: 8px;
+
+}
+/*BG image on game page */
 
 #game-body{
     background-color:salmon;
