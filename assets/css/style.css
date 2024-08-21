@@ -100,10 +100,11 @@ a:hover {
 #game-text {
     display: inline-block;
     letter-spacing: 0.1em;
-    width:0;
+    width: 0;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: initial;
     border-right: solid 1px black;
+    
 
     animation:
      game-text 2s steps(21) 1s forwards,
@@ -116,6 +117,6 @@ a:hover {
 
 @keyframes blink {
     from {border-color: transparent}
-    50% {border-color: black}
+    50% {border-color: salmon}
     to {border-color: transparent}
 }
