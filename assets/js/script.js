@@ -323,19 +323,19 @@ let firstChoice = null;
 function choosePath(event){
   if(firstChoice === null){
     firstChoice = event.target.id;
-    nextPath();
+    return firstChoice;
   } 
-}
+};
 
-function path(){
+function path(functionName){
   let buttons = document.getElementsByClassName('choice-btn');
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click',choosePath);
+    buttons[i].addEventListener('click',functionName);
   }
 }
 
-// Check the next scenario and possible options
-function nextPath(){
+// Check the current scenario and possible options
+function currentScenario(){
   if(firstChoice === 'choice1'){
     removeHeading();
     consequence.textContent = gamePlay1[1].text;
@@ -344,6 +344,7 @@ function nextPath(){
     choice3.textContent = gamePlay1[1].choices[3];
     choice4.textContent = gamePlay1[1].choices[4];
     choice4.style.display = 'unset';
+    path(choosePath);
   }
   else if(firstChoice === 'choice2'){
     removeHeading();
@@ -351,6 +352,7 @@ function nextPath(){
     choice1.textContent = gamePlay2[2].choices[1];
     choice2.textContent = gamePlay2[2].choices[2];
     choice3.textContent = gamePlay2[2].choices[3];
+    path(choosePath);
   }
   else {
     removeHeading();
@@ -360,13 +362,110 @@ function nextPath(){
     choice3.textContent = gamePlay3[3].choices[3];
     choice4.textContent = gamePlay3[3].choices[4];
     choice4.style.display = 'unset';
+    path(choosePath);
   }
 }
 
+function nextScenario(){
+  if(firstChoice === 'choice1'){
+    consequence.textContent = gamePlay1[11].text;
+    choice1.textContent = gamePlay1[1].choices[1];
+    choice2.textContent = gamePlay1[1].choices[2];
+    choice3.textContent = gamePlay1[1].choices[3];
+  }
+
+}
 
 function playGame(){
   hideButton();
-  path();
+  path(currentScenario);
+  path(nextScenario);
 }
 
 playGame();
+
+
+
+/* possible solution
+
+// Track the current scenario
+let currentScenarioId = "1"; // Start at the first scenario
+
+// Paragraph which will show the consequences of the choice
+const consequence = document.getElementById('game-text');
+
+// User choices
+const choice1 = document.getElementById('choice1');
+const choice2 = document.getElementById('choice2');
+const choice3 = document.getElementById('choice3');
+const choice4 = document.getElementById('choice4');
+
+// Remove button if it is empty
+function hideButton() {
+  let buttons = document.getElementsByClassName('choice-btn');
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i].textContent.trim() === "") {
+      buttons[i].style.display = 'none';
+    } else {
+      buttons[i].style.display = 'inline-block';
+    }
+  }
+}
+
+// Remove the Happy Birthday header
+function removeHeading(){
+  let heading = document.getElementById('heading');
+  heading.remove();
+}
+
+// Update the game display based on the current scenario
+function updateGameDisplay() {
+  const scenario = gamePlay1[currentScenarioId]; // Access the correct scenario data
+
+  // Update the consequence text
+  consequence.textContent = scenario.text;
+
+  // Update the choices
+  choice1.textContent = scenario.choices["1"] || "";
+  choice2.textContent = scenario.choices["2"] || "";
+  choice3.textContent = scenario.choices["3"] || "";
+  choice4.textContent = scenario.choices["4"] || "";
+
+  // Hide buttons if there are no choices for them
+  hideButton();
+}
+
+// Handle the user's choice and move to the next scenario
+function handleChoice(event) {
+  const choiceNumber = event.target.id.replace('choice', '');
+
+  // Determine the next scenario based on the current choice
+  currentScenarioId += choiceNumber; // Append the choice to the scenario ID
+
+  // Update the game display with the new scenario
+  if (gamePlay1[currentScenarioId]) {
+    updateGameDisplay();
+  } else {
+    console.log("End of the path or invalid choice.");
+  }
+}
+
+// Add event listeners to choice buttons
+function setupEventListeners() {
+  choice1.addEventListener('click', handleChoice);
+  choice2.addEventListener('click', handleChoice);
+  choice3.addEventListener('click', handleChoice);
+  choice4.addEventListener('click', handleChoice);
+}
+
+// Start the game
+function playGame() {
+  removeHeading(); // Only call this once
+  updateGameDisplay();
+  setupEventListeners();
+}
+
+// Run the game
+playGame();
+
+*/ 

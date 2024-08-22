@@ -102,6 +102,7 @@ a:hover {
     letter-spacing: 0.1em;
     width: 0;
     overflow: hidden;
+    overflow-wrap:anywhere;
     white-space: initial;
     border-right: solid 1px black;
     
