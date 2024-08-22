@@ -154,7 +154,7 @@ const gamePlay = {
     }
   },
   "2211": {
-    text: "You are in the dining room. You’ve just finished dinner. As you head to the front door, you pause.\n\n\"Don't be afraid. We will be with you forever,\" says your partner from behind you. The kids wave and say goodbye.\n\nYou open the door, and everything turns white.\n\nWhen you open your eyes, you’re in a bed, with people around you asking questions.\n\n\"What happened? Are you okay? Come on, it’s your birthday. You need to wish for something...\"",
+    text: "You are in the dining room. You’ve just finished dinner. As you head to the front door, you pause.\n\n\"Don't be afraid. We will be with you forever,\" says your partner from behind you. The kids wave and say goodbye.\n\nYou open the door, and everything turns white.\n\nWhen you open your eyes, you’re in a bed, with people around you asking questions.\n\n\"What happened? Are you okay?",
     choices: {}
   },
   "2212": {
@@ -216,7 +216,7 @@ const gamePlay = {
     choices: {}
   },
   "312": {
-    text: "You spent countless hours trying to figure out how to heal yourself, but it was not possible with the current technology. So what can you do? The greatest mind in the universe? You built a time machine and have been testing it for the last 2 months. You plan to travel 30 years into the future, where modern technology might be able to save your life.\n\nYou turn on the time machine, set the coordinates, and get ready to go. You sit in the time machine and activate it. Everything goes dark.\n\nWhen you open your eyes, you find yourself in a restroom. You wash your face and leave the restroom. You are in a restaurant and feel confused, not knowing what has happened.\n\nYour father, emerging from a box, waves at you and says, \"Hey you, the birthday cake is here. Hurry, make a wish.\"",
+    text: "You spent countless hours trying to figure out how to heal yourself, but it was not possible with the current technology. So what can you do? The greatest mind in the universe? You built a time machine and have been testing it for the last 2 months. You plan to travel 30 years into the future, where modern technology might be able to save your life.\n\nYou turn on the time machine, set the coordinates, and get ready to go. You sit in the time machine and activate it. Everything goes dark.\n\nWhen you open your eyes, you find yourself in a restroom. You wash your face and leave the restroom. You are in a restaurant and feel confused, not knowing what has happened.\n\nYour father, emerging from a box, waves at you and says:",
     choices: {}
   },
   "32": {
@@ -269,8 +269,7 @@ const gamePlay = {
 
 // Get user name and age and submit details to start the game
 
-function getStarted(event) {
-  event.preventDefault();
+function getStarted() {
   let name = document.getElementById('name').value;
   let age = document.getElementById('age').value;
   let div = document.getElementById('player-details');
@@ -283,7 +282,7 @@ function getStarted(event) {
 let form = document.getElementById('entry');
 if (form) {
   form.addEventListener('submit', getStarted);
-}
+};
 
 // Paragraph which will show the consequences of the choice
 
@@ -299,50 +298,67 @@ const choice4 = document.getElementById('choice4');
 function hideButton() {
   let buttons = document.getElementsByClassName('choice-btn');
   for (let i = 0; i < buttons.length; i++) {
-    if (buttons[i].textContent.trim() === "") {
+    if (buttons[i].textContent.trim() != "") {
+      buttons[i].style.display = 'unset';
+    } else {
       buttons[i].style.display = 'none';
     }
   };
 };
 
 // Remove the Happy Birtday header
-function removeHeading(){
+function removeHeading() {
   let heading = document.getElementById('heading');
-  heading.remove();
-}
+  if (heading) {
+    heading.remove();
+  }
+};
 
-// Function for moving to the next scenario based on the choice
+// Loop function to get back to the first choices at some scenarios
+
+function loopGame() {
+  let loop = document.getElementById('loop');
+  loop.innerHTML = `<a href='game.html' id=loop-link>Come on, it’s your birthday. You need to wish for something...</a> `;
+};
 
 // Store the previous choice 
 let choice = '';
-
+//Get the value of the first choice
 function firstChoice(event) {
-  choice += event.target.id.replace('choice', ''); // Extract the choice number (1, 2, 3, etc.)
-  nextChoice(); // Move to the next scenario
+  // Use the choice number by removing the choice word and append its number only
+  choice += event.target.id.replace('choice', '');
+  // Move to the next scenario
+  nextChoice();
   removeHeading();
+  hideButton();
+  if (choice === '312' || choice === '2211') {
+    loopGame();
+    game();
+  };
 }
+  // Function for moving to the next scenario based on the previous choice
+  function nextChoice() {
+    let scenario = gamePlay[choice];
+    consequence.textContent = scenario.text;
+    choice1.textContent = scenario.choices['1'];
+    choice2.textContent = scenario.choices['2'];
+    choice3.textContent = scenario.choices['3'];
+    choice4.textContent = scenario.choices['4'];
+    hideButton();
+  };
 
-function nextChoice() {
-  let scenario = gamePlay[choice];
-  consequence.textContent = scenario.text;
-  choice1.textContent = scenario.choices['1'];
-  choice2.textContent = scenario.choices['2'];
-  choice3.textContent = scenario.choices['3'];
-  choice4.textContent = scenario.choices['4'];
-  hideButton()
-};
+  function eventListeners() {
+    choice1.addEventListener('click', firstChoice);
+    choice2.addEventListener('click', firstChoice);
+    choice3.addEventListener('click', firstChoice);
+    choice4.addEventListener('click', firstChoice);
+  };
+  // Gameplay function which initiates the game
 
-function eventListeners() {
-  choice1.addEventListener('click', firstChoice);
-  choice2.addEventListener('click', firstChoice);
-  choice3.addEventListener('click', firstChoice);
-  choice4.addEventListener('click', firstChoice);
-}
-// Gameplay function which initiates the game
+  function game() {
+    eventListeners();
+    hideButton();
+  };
 
-function game(){
-  hideButton()
-  eventListeners();
-}
-
-game();
+  game();
+  
