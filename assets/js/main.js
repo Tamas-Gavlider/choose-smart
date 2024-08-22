@@ -1,5 +1,5 @@
-// Gameplay if player go with 1st choice 
-const gamePlay1 = {
+// Gameplay scenarios
+const gamePlay = {
   "1": {
     text: "Your risky investments paid off, and now you belong to the top 10%. What would you like to do next?",
     choices: {
@@ -98,10 +98,7 @@ const gamePlay1 = {
   "142": {
     text: "You have arrived at the safest bunker in the world. Someone escorts you from the command center to your room. A large counter shows that 6 hours remain until impact. You’re given the finest room. You unpack your things. Someone knocks on the door. You ignore it. You’re tired and just want to sleep. Seven hours later, you wake up and go to get some food. You walk for seven minutes and see no one. It’s like everyone left while you were asleep. You reach the command center where a video is playing on a loop on a big screen. 'The spaceships launch tomorrow at 8 AM. Be here or you will not survive. The meteor will destroy the entire Earth.' You are confused. You suddenly realize you’ve missed your ride. The lights in the command center start blinking. It’s getting very warm in here. The counter shows 0. The lights go out. You see nothing, and the temperature is rising... 'I need to... I need to get... to... the spaceship!'",
     choices: {}
-  } 
-};
-// Path if user go with 2nd choice
-const gamePlay2 = {
+  },
   "2": {
     text: "You met the love of your life that very night. Your wedding is in an hour. You couldn’t be happier, could you?",
     choices: {
@@ -197,10 +194,7 @@ const gamePlay2 = {
   "2322": {
     text: "\"You know, we never really talked to each other,\" says your neighbor.\n\"How interesting that small decisions, like getting to know each other, might have led to a different outcome. You might have ended up in a safe place, or I might be in a safe place now,\" the neighbor continues.\n\"Small decisions—those are the biggest ones.\"\nYou hear a car engine in the distance. The car turns into the street, and you see that it’s your family.\n\"Where have you been?\" you ask your partner.\n\"We got supplies,\" says your partner.\n\"Supplies for what? There’s nowhere to go.\"\n\"Yes, our neighbor has a bunker where we can all fit.\"\nYou turn to the neighbor.\n\"You told me they left,\" you shout at the neighbor.\n\"Chill out, I like to joke. My family is already there. Would you mind if we join them?\"\nYou all get into the bunker. In the end, it was a safe place. You survived the crash. But you will spend the next few years in the bunker with your family and the neighbors.",
     choices: {}
-  }
-}
-// Path if user go with 3rd choice
-const gamePlay3 = {
+  },
   "3": {
     text: "You were hit by a truck and were in a coma for 4 years. When you wake up, you suddenly see the world differently. After the accident, something happened to you, and now you are incredibly smart.\nWhat would you like to do with this gift?",
     choices: {
@@ -301,15 +295,15 @@ const choice2 = document.getElementById('choice2');
 const choice3 = document.getElementById('choice3');
 const choice4 = document.getElementById('choice4');
 
-// Remove button if it is empty make a function for this
+// Remove button if it is empty
 function hideButton() {
   let buttons = document.getElementsByClassName('choice-btn');
   for (let i = 0; i < buttons.length; i++) {
     if (buttons[i].textContent.trim() === "") {
       buttons[i].style.display = 'none';
     }
-  }
-}
+  };
+};
 
 // Remove the Happy Birtday header
 function removeHeading(){
@@ -317,155 +311,38 @@ function removeHeading(){
   heading.remove();
 }
 
-// Check which path will be followed
-let firstChoice = null;
+// Function for moving to the next scenario based on the choice
 
-function choosePath(event){
-  if(firstChoice === null){
-    firstChoice = event.target.id;
-    return firstChoice;
-  } 
+// Store the previous choice 
+let choice = '';
+
+function firstChoice(event) {
+  choice += event.target.id.replace('choice', ''); // Extract the choice number (1, 2, 3, etc.)
+  nextChoice(); // Move to the next scenario
+  removeHeading();
+}
+
+function nextChoice() {
+  let scenario = gamePlay[choice];
+  consequence.textContent = scenario.text;
+  choice1.textContent = scenario.choices['1'];
+  choice2.textContent = scenario.choices['2'];
+  choice3.textContent = scenario.choices['3'];
+  choice4.textContent = scenario.choices['4'];
+  hideButton()
 };
 
-function path(functionName){
-  let buttons = document.getElementsByClassName('choice-btn');
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click',functionName);
-  }
+function eventListeners() {
+  choice1.addEventListener('click', firstChoice);
+  choice2.addEventListener('click', firstChoice);
+  choice3.addEventListener('click', firstChoice);
+  choice4.addEventListener('click', firstChoice);
+}
+// Gameplay function which initiates the game
+
+function game(){
+  hideButton()
+  eventListeners();
 }
 
-// Check the current scenario and possible options
-function currentScenario(){
-  if(firstChoice === 'choice1'){
-    removeHeading();
-    consequence.textContent = gamePlay1[1].text;
-    choice1.textContent = gamePlay1[1].choices[1];
-    choice2.textContent = gamePlay1[1].choices[2];
-    choice3.textContent = gamePlay1[1].choices[3];
-    choice4.textContent = gamePlay1[1].choices[4];
-    choice4.style.display = 'unset';
-    path(choosePath);
-  }
-  else if(firstChoice === 'choice2'){
-    removeHeading();
-    consequence.textContent = gamePlay2[2].text;
-    choice1.textContent = gamePlay2[2].choices[1];
-    choice2.textContent = gamePlay2[2].choices[2];
-    choice3.textContent = gamePlay2[2].choices[3];
-    path(choosePath);
-  }
-  else {
-    removeHeading();
-    consequence.textContent = gamePlay3[3].text;
-    choice1.textContent = gamePlay3[3].choices[1];
-    choice2.textContent = gamePlay3[3].choices[2];
-    choice3.textContent = gamePlay3[3].choices[3];
-    choice4.textContent = gamePlay3[3].choices[4];
-    choice4.style.display = 'unset';
-    path(choosePath);
-  }
-}
-
-function nextScenario(){
-  if(firstChoice === 'choice1'){
-    consequence.textContent = gamePlay1[11].text;
-    choice1.textContent = gamePlay1[1].choices[1];
-    choice2.textContent = gamePlay1[1].choices[2];
-    choice3.textContent = gamePlay1[1].choices[3];
-  }
-
-}
-
-function playGame(){
-  hideButton();
-  path(currentScenario);
-  path(nextScenario);
-}
-
-playGame();
-
-
-
-/* possible solution
-
-// Track the current scenario
-let currentScenarioId = "1"; // Start at the first scenario
-
-// Paragraph which will show the consequences of the choice
-const consequence = document.getElementById('game-text');
-
-// User choices
-const choice1 = document.getElementById('choice1');
-const choice2 = document.getElementById('choice2');
-const choice3 = document.getElementById('choice3');
-const choice4 = document.getElementById('choice4');
-
-// Remove button if it is empty
-function hideButton() {
-  let buttons = document.getElementsByClassName('choice-btn');
-  for (let i = 0; i < buttons.length; i++) {
-    if (buttons[i].textContent.trim() === "") {
-      buttons[i].style.display = 'none';
-    } else {
-      buttons[i].style.display = 'inline-block';
-    }
-  }
-}
-
-// Remove the Happy Birthday header
-function removeHeading(){
-  let heading = document.getElementById('heading');
-  heading.remove();
-}
-
-// Update the game display based on the current scenario
-function updateGameDisplay() {
-  const scenario = gamePlay1[currentScenarioId]; // Access the correct scenario data
-
-  // Update the consequence text
-  consequence.textContent = scenario.text;
-
-  // Update the choices
-  choice1.textContent = scenario.choices["1"] || "";
-  choice2.textContent = scenario.choices["2"] || "";
-  choice3.textContent = scenario.choices["3"] || "";
-  choice4.textContent = scenario.choices["4"] || "";
-
-  // Hide buttons if there are no choices for them
-  hideButton();
-}
-
-// Handle the user's choice and move to the next scenario
-function handleChoice(event) {
-  const choiceNumber = event.target.id.replace('choice', '');
-
-  // Determine the next scenario based on the current choice
-  currentScenarioId += choiceNumber; // Append the choice to the scenario ID
-
-  // Update the game display with the new scenario
-  if (gamePlay1[currentScenarioId]) {
-    updateGameDisplay();
-  } else {
-    console.log("End of the path or invalid choice.");
-  }
-}
-
-// Add event listeners to choice buttons
-function setupEventListeners() {
-  choice1.addEventListener('click', handleChoice);
-  choice2.addEventListener('click', handleChoice);
-  choice3.addEventListener('click', handleChoice);
-  choice4.addEventListener('click', handleChoice);
-}
-
-// Start the game
-function playGame() {
-  removeHeading(); // Only call this once
-  updateGameDisplay();
-  setupEventListeners();
-}
-
-// Run the game
-playGame();
-
-*/ 
+game();
