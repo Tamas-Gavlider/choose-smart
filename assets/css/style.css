@@ -95,20 +95,19 @@ a:hover {
 #reset-game:hover {
     color:yellow;
 }
-
-/*Typewriter effect for paragraph on the game page*/
+/*
+Typewriter effect for paragraph on the game page
 #game-text {
     display: inline-block;
     letter-spacing: 0.1em;
     width: 0;
     overflow: hidden;
-    overflow-wrap:anywhere;
     white-space: initial;
     border-right: solid 1px black;
     
 
     animation:
-     game-text 2s steps(21) 1s forwards,
+     game-text 2s steps(20) 1s forwards,
      blink 0.5s steps(1) infinite;
 }
 
@@ -121,3 +120,4 @@ a:hover {
     50% {border-color: salmon}
     to {border-color: transparent}
 }
+*/
