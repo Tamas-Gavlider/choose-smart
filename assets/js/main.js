@@ -73,7 +73,7 @@ const gamePlay = {
     }
   },
   "131": {
-    text: "Your Aperol is finished. You walk to the beach and sit down in the sand. Is this really it? You throw your Aperol into the ocean and start shouting. Is this how it ends? I’ve wanted to be alone my whole life, and now that I finally am happy, the universe takes it from me. It’s not fair! You go back to your house and take a bunch of pills. You lie down on your sofa and hum a song. The words barely come out of your mouth. You close your eyes.",
+    text: "Your Aperol is finished. You walk to the beach and sit down in the sand. Is this really it? You throw your Aperol into the ocean and start shouting. Is this how it ends? I’ve wanted to be alone my whole life, and now that I finally am happy, the universe takes it from me. It’s not fair! You go back to your house and take a bunch of pills. You return to the beach, sit down in the sand and hum a song. The words barely come out of your mouth. You close your eyes.",
     choices: {}
   },
   "132": {
@@ -81,7 +81,7 @@ const gamePlay = {
     choices: {}
   },
   "132": {
-    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know,' your dad says. You go to dinner, and all the family members are there. No one says a single word, and it means more than a thousand words ever could. You share one last meal together. Everyone is happy, and it feels like one of those family dinners when you were ten. After dinner, the whole family sits in the living room. The pictures on the wall fall off, the earth is shaking, and from outside, you hear people shouting, 'Look, it’s so close.' Your dad hugs you and whispers in your ear, 'I’m proud of you, my son.'",
+    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know,' your dad says. You go to dinner, and all the family members are there. No one says a single word, and it means more than a thousand words ever could. You share one last meal together. Everyone is happy, and it feels like one of those family dinners when you were ten. After dinner, the whole family sits in the living room. The pictures on the wall fall off, the earth is shaking, and from outside, you hear people shouting, 'Look, it’s so close.' Your dad hugs you and whispers in your ear, 'I’m proud of you.'",
     choices: {}
   },
   "14": {
@@ -336,40 +336,78 @@ function firstChoice(event) {
     game();
     changeAudio('assets/media/audio/sad-epic-cinematic-music-classical-233797.mp3');
     changeVideo('assets/media/video/212499_small.mp4');
-    } else if(choice === '1'){
-      changeAudio('assets/media/audio/drive-breakbeat-173062.mp3');
-      changeVideo('assets/media/video/money.mp4');
-    } else if(choice === '13'){
-      changeAudio('assets/media/audio/just-relax-11157.mp3');
-      changeVideo('assets/media/video/beach.mp4');
-    } else if(choice === '11'){
-      changeAudio('assets/media/audio/time-166273.mp3');
-      changeVideo('assets/media/video/peaceful.mp4');
-    } else if(choice === '111'){
-      changeVideo('assets/media/video/street.mp4');
-    } else if(choice === '112'){
-      changeVideo('assets/media/video/home.mp4');
-    };
-    
-}
-  // Function for moving to the next scenario based on the previous choice
-  function nextChoice() {
-    let scenario = gamePlay[choice];
-    consequence.textContent = scenario.text;
-    choice1.textContent = scenario.choices['1'];
-    choice2.textContent = scenario.choices['2'];
-    choice3.textContent = scenario.choices['3'];
-    choice4.textContent = scenario.choices['4'];
-    hideButton();
+  } else if (choice === '1') {
+    changeAudio('assets/media/audio/drive-breakbeat-173062.mp3');
+    changeVideo('assets/media/video/money.mp4');
+  } else if (choice === '13') {
+    changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
+    changeVideo('assets/media/video/beach.mp4');
+  } else if(choice === '131'){
+    changeVideo('assets/media/video/sitting_on_the_beach.mp4');
+  } else if(choice === '132'){
+    changeVideo('assets/media/video/father.mp4');
+  } else if(choice === '14'){
+    changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
+  }
+    else if(choice === '141'){
+    changeVideo('assets/media/video/skyscraper.mp4');
+  }
+  else if(choice === '142'){
+    changeVideo('assets/media/video/astronaut.mp4');
+  }
+  else if (choice === '11') {
+    changeAudio('assets/media/audio/time-166273.mp3');
+    changeVideo('assets/media/video/peaceful.mp4');
+  } else if (choice === '111') {
+    changeVideo('assets/media/video/street.mp4');
+  } else if (choice === '112') {
+    changeVideo('assets/media/video/home.mp4');
+  } else if (choice === '113' || choice === '121') {
+    changeAudio('assets/media/audio/funeral-165257.mp3');
+    changeVideo('assets/media/video/funeral.mp4');
+  } else if(choice === '122'){
+    changeAudio('assets/media/audio/time-166273.mp3');
+    changeVideo('assets/media/video/traffic.mp4');
+  } else if(choice === '1221'){
+    changeVideo('assets/media/video/house.mp4');
+    } else if(choice === '1222'){
+      changeVideo('assets/media/video/plane.mp4');
+    } else if(choice === '1223'){
+      changeVideo('assets/media/video/skyscraper.mp4');
+    } else if (choice === '2') {
+    changeAudio('assets/media/audio/gospel-choir-heavenly-transition-3-186880.mp3');
+    changeVideo('assets/media/video/wedding.mp4');
+  } else if (choice === '21') {
+    changeAudio('assets/media/audio/sad-violin-150146.mp3');
+    changeVideo('assets/media/video/couple.mp4');
+  } else if (choice === '211') {
+    changeVideo('assets/media/video/homeless.mp4');
+  } else if (choice === '2111') {
+    changeVideo('assets/media/video/journal.mp4')
+  } else if(choice === '2112'){
+    changeVideo('assets/media/video/heart_beat.mp4');
+    video.loop = false;
   };
 
-  function eventListeners() {
-    choice1.addEventListener('click', firstChoice);
-    choice2.addEventListener('click', firstChoice);
-    choice3.addEventListener('click', firstChoice);
-    choice4.addEventListener('click', firstChoice);
-    soundtrackButton.addEventListener('click', controlMusic)
-  };
+}
+// Function for moving to the next scenario based on the previous choice
+function nextChoice() {
+  let scenario = gamePlay[choice];
+  consequence.textContent = scenario.text;
+  choice1.textContent = scenario.choices['1'];
+  choice2.textContent = scenario.choices['2'];
+  choice3.textContent = scenario.choices['3'];
+  choice4.textContent = scenario.choices['4'];
+  hideButton();
+};
+
+function eventListeners() {
+  choice1.addEventListener('click', firstChoice);
+  choice2.addEventListener('click', firstChoice);
+  choice3.addEventListener('click', firstChoice);
+  choice4.addEventListener('click', firstChoice);
+  soundtrackButton.addEventListener('click', controlMusic)
+};
 
 // Mute/unmute audio 
 let sound = document.getElementById('audio');
@@ -377,20 +415,19 @@ let soundtrackButton = document.getElementById('audio-btn');
 let audioSource = document.getElementById('audioSource');
 
 function controlMusic() {
-    if (sound.muted) {
-        sound.muted = false;
-        soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-        sound.play();
-    }
-    else {
-        sound.muted = true;
-        soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
-    }
+  if (sound.muted) {
+    sound.muted = false;
+    soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    sound.play();
+  } else {
+    sound.muted = true;
+    soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+  }
 }
 
 // Change audio at specific scenarios
 
-function changeAudio(newAudio){
+function changeAudio(newAudio) {
   audioSource.src = newAudio;
   sound.load();
   sound.play();
@@ -398,19 +435,19 @@ function changeAudio(newAudio){
 
 // Add video at specific scenarios
 let video = document.getElementById('video');
-function changeVideo(newVideo){
-  video.src=newVideo;
+
+function changeVideo(newVideo) {
+  video.src = newVideo;
   video.style.display = 'unset';
   video.load();
   video.play();
 }
 
-  // Gameplay function which initiates the game
+// Gameplay function which initiates the game
 
-  function game() {
-    eventListeners();
-    hideButton();
-  };
+function game() {
+  eventListeners();
+  hideButton();
+};
 
-  game();
-  
+game();
