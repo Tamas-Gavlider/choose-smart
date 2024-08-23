@@ -30,6 +30,7 @@ Font Awesome - Used for icon and logo images.
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 [Favicon](https://favicon.io/favicon-converter/#google_vignette) - To create Favicon.
+
 [Pixabay](https://pixabay.com/) - Used to donwload audio and video. 
 
 ## Deployment & Local Development

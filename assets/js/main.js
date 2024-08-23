@@ -81,7 +81,7 @@ const gamePlay = {
     choices: {}
   },
   "132": {
-    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know,' your dad says. You go to dinner, and all the family members are there. No one says a single word, and it means more than a thousand words ever could. You share one last meal together. Everyone is happy, and it feels like one of those family dinners when you were ten. After lunch, the whole family sits in the living room. The pictures on the wall fall off, the earth is shaking, and from outside, you hear people shouting, 'Look, it’s so close.' Your dad hugs you and whispers in your ear, 'I’m proud of you, my son.'",
+    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know,' your dad says. You go to dinner, and all the family members are there. No one says a single word, and it means more than a thousand words ever could. You share one last meal together. Everyone is happy, and it feels like one of those family dinners when you were ten. After dinner, the whole family sits in the living room. The pictures on the wall fall off, the earth is shaking, and from outside, you hear people shouting, 'Look, it’s so close.' Your dad hugs you and whispers in your ear, 'I’m proud of you, my son.'",
     choices: {}
   },
   "14": {
@@ -336,8 +336,21 @@ function firstChoice(event) {
     game();
     changeAudio('assets/media/audio/sad-epic-cinematic-music-classical-233797.mp3');
     changeVideo('assets/media/video/212499_small.mp4');
+    } else if(choice === '1'){
+      changeAudio('assets/media/audio/drive-breakbeat-173062.mp3');
+      changeVideo('assets/media/video/money.mp4');
+    } else if(choice === '13'){
+      changeAudio('assets/media/audio/just-relax-11157.mp3');
+      changeVideo('assets/media/video/beach.mp4');
+    } else if(choice === '11'){
+      changeAudio('assets/media/audio/time-166273.mp3');
+      changeVideo('assets/media/video/peaceful.mp4');
+    } else if(choice === '111'){
+      changeVideo('assets/media/video/street.mp4');
+    } else if(choice === '112'){
+      changeVideo('assets/media/video/home.mp4');
+    };
     
-  };
 }
   // Function for moving to the next scenario based on the previous choice
   function nextChoice() {
@@ -387,6 +400,7 @@ function changeAudio(newAudio){
 let video = document.getElementById('video');
 function changeVideo(newVideo){
   video.src=newVideo;
+  video.style.display = 'unset';
   video.load();
   video.play();
 }
