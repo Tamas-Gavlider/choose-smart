@@ -95,6 +95,16 @@ a:hover {
 #reset-game:hover {
     color:yellow;
 }
+
+#video {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border: 2px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000; 
+}
 /*
 Typewriter effect for paragraph on the game page
 #game-text {

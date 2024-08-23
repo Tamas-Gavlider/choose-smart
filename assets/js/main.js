@@ -335,6 +335,7 @@ function firstChoice(event) {
     loopGame();
     game();
     changeAudio('assets/media/audio/sad-epic-cinematic-music-classical-233797.mp3');
+    changeVideo('assets/media/video/212499_small.mp4');
     
   };
 }
@@ -380,6 +381,14 @@ function changeAudio(newAudio){
   audioSource.src = newAudio;
   sound.load();
   sound.play();
+}
+
+// Add video at specific scenarios
+let video = document.getElementById('video');
+function changeVideo(newVideo){
+  video.src=newVideo;
+  video.load();
+  video.play();
 }
 
   // Gameplay function which initiates the game
