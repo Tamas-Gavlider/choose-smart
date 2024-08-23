@@ -334,6 +334,8 @@ function firstChoice(event) {
   if (choice === '312' || choice === '2211') {
     loopGame();
     game();
+    changeAudio('assets/media/audio/sad-epic-cinematic-music-classical-233797.mp3');
+    
   };
 }
   // Function for moving to the next scenario based on the previous choice
@@ -352,7 +354,34 @@ function firstChoice(event) {
     choice2.addEventListener('click', firstChoice);
     choice3.addEventListener('click', firstChoice);
     choice4.addEventListener('click', firstChoice);
+    soundtrackButton.addEventListener('click', controlMusic)
   };
+
+// Mute/unmute audio 
+let sound = document.getElementById('audio');
+let soundtrackButton = document.getElementById('audio-btn');
+let audioSource = document.getElementById('audioSource');
+
+function controlMusic() {
+    if (sound.muted) {
+        sound.muted = false;
+        soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        sound.play();
+    }
+    else {
+        sound.muted = true;
+        soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+    }
+}
+
+// Change audio at specific scenarios
+
+function changeAudio(newAudio){
+  audioSource.src = newAudio;
+  sound.load();
+  sound.play();
+}
+
   // Gameplay function which initiates the game
 
   function game() {
