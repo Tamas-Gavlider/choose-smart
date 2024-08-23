@@ -5,6 +5,33 @@ It is a decision-based game where every choice the user makes influences the sto
 Users making critical decisions that shape the narrative, leading to multiple possible endings.<br>
 Choose Smart offers a unique experience where your decisions truly matter.
 
+[View Choose Smart on Github Pages](https://tamas-gavlider.github.io/choose-smart/)
+
+## Contents
+
+## Web Page Goal
+
+## Technologies used
+
+### Languages used
+
+HTML,CSS and JavaScriptwere used to create this website.
+
+### Frameworks, Libraries & Programs Used
+
+Git - for Version Control.
+
+Github - To save and store the files for the website.
+
+Google Fonts - To import the fonts used on the website.
+
+Font Awesome - Used for icon and logo images.
+
+Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Favicon](https://favicon.io/favicon-converter/#google_vignette) - To create Favicon.
+[Pixabay](https://pixabay.com/) - Used to donwload audio and video. 
+
 ## Deployment & Local Development
 
 ### Deployment
@@ -37,3 +64,17 @@ To clone the The-Hunger-Gamers repository:
 1. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 1. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 1. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+### Testing
+
+### Known Bugs
+
+### W3C Validator
+
+### Lighthouse
+
+### Wave
+
+### Full Testing
+
+## Credits 

@@ -8,19 +8,19 @@ body {
     padding: 0;
     font-family: 'Old+Standard+TT', sans-serif;
     letter-spacing: 1px;
-    color:rgb(51, 49, 49);
-    background-color:salmon;
+    color: rgb(51, 49, 49);
+    background-color: salmon;
     margin-left: 5px;
-    
+
 }
 
 a {
-    color:rgb(51, 49, 49);
+    color: rgb(51, 49, 49);
     text-decoration: none;
 }
 
 a:hover {
-    color:yellow;
+    color: yellow;
 }
 
 /*Style for the index html*/
@@ -38,7 +38,7 @@ a:hover {
 
 #player-details a {
     margin-left: 5px;
-    color:rgb(51, 49, 49);
+    color: rgb(51, 49, 49);
     text-decoration: none;
 }
 
@@ -56,11 +56,12 @@ a:hover {
     margin-left: 8px;
 
 }
+
 /*BG image on game page */
 
-#game-body{
-    background-color:salmon;
-    color:rgb(51, 49, 49);
+#game-body {
+    background-color: salmon;
+    color: rgb(51, 49, 49);
 }
 
 /*Flex for the game page*/
@@ -81,6 +82,7 @@ a:hover {
     background-color: salmon;
 
 }
+
 #game h2 {
     text-align: center;
 }
@@ -88,46 +90,29 @@ a:hover {
 #reset-game {
     position: absolute;
     bottom: 10px;
-    color:rgb(51, 49, 49);
+    color: rgb(51, 49, 49);
     text-decoration: none;
 }
 
 #reset-game:hover {
-    color:yellow;
+    color: yellow;
 }
+
+/*Position of the mute/unmute audio button*/
+#audio-btn {
+    position: absolute;
+    bottom: 5px;
+}
+
+/*Style for the video*/
 
 #video {
-    width: 100%;
+    width: 97.5%;
     height: auto;
     max-width: 600px;
-    border: 2px solid #333; 
+    border: 2px solid #333;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #000; 
+    background-color: #000;
+    margin-top: 50px;
 }
-/*
-Typewriter effect for paragraph on the game page
-#game-text {
-    display: inline-block;
-    letter-spacing: 0.1em;
-    width: 0;
-    overflow: hidden;
-    white-space: initial;
-    border-right: solid 1px black;
-    
-
-    animation:
-     game-text 2s steps(20) 1s forwards,
-     blink 0.5s steps(1) infinite;
-}
-
-@keyframes game-text {
-    to {width: 100%}
-}
-
-@keyframes blink {
-    from {border-color: transparent}
-    50% {border-color: salmon}
-    to {border-color: transparent}
-}
-*/
