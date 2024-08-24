@@ -139,7 +139,7 @@ const gamePlay = {
     choices: {}
   },
   "22": {
-    text: "You had a car accident and are now confined to a wheelchair for the rest of your life. The manufacturer decided to give you $1 million to avoid a lawsuit. While you were hospitalized, your partner divorced you and left with half of the money.\n1. Stay home and hide from the public.\n2. Start rehab and attempt the impossible: walk again.\n3. I can’t stand it anymore—the pain, the heartbreak. I want to quit!",
+    text: "You had a car accident and are now confined to a wheelchair for the rest of your life. The manufacturer decided to give you $1 million to avoid a lawsuit. While you were hospitalized, your partner divorced you and left with half of the money.",
     choices: {
       "1": "Stay home and hide from the public.",
       "2": "Start rehab and attempt the impossible: walk again.",
@@ -335,46 +335,43 @@ function firstChoice(event) {
     loopGame();
     game();
     changeAudio('assets/media/audio/sad-epic-cinematic-music-classical-233797.mp3');
-    changeVideo('assets/media/video/212499_small.mp4');
+    video.style.display = 'none';
   } else if (choice === '1') {
     changeAudio('assets/media/audio/drive-breakbeat-173062.mp3');
     changeVideo('assets/media/video/money.mp4');
   } else if (choice === '13') {
     changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
     changeVideo('assets/media/video/beach.mp4');
-  } else if(choice === '131'){
+  } else if (choice === '131') {
     changeVideo('assets/media/video/sitting_on_the_beach.mp4');
-  } else if(choice === '132'){
+  } else if (choice === '132') {
     changeVideo('assets/media/video/father.mp4');
-  } else if(choice === '14'){
+  } else if (choice === '14') {
     changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
-  }
-    else if(choice === '141'){
+  } else if (choice === '141') {
     changeVideo('assets/media/video/skyscraper.mp4');
-  }
-  else if(choice === '142'){
+  } else if (choice === '142') {
     changeVideo('assets/media/video/astronaut.mp4');
-  }
-  else if (choice === '11') {
+  } else if (choice === '11') {
     changeAudio('assets/media/audio/time-166273.mp3');
     changeVideo('assets/media/video/peaceful.mp4');
   } else if (choice === '111') {
     changeVideo('assets/media/video/street.mp4');
   } else if (choice === '112') {
     changeVideo('assets/media/video/home.mp4');
-  } else if (choice === '113' || choice === '121') {
+  } else if (choice === '113' || choice === '121' || choice === '223') {
     changeAudio('assets/media/audio/funeral-165257.mp3');
     changeVideo('assets/media/video/funeral.mp4');
-  } else if(choice === '122'){
+  } else if (choice === '122') {
     changeAudio('assets/media/audio/time-166273.mp3');
     changeVideo('assets/media/video/traffic.mp4');
-  } else if(choice === '1221'){
+  } else if (choice === '1221') {
     changeVideo('assets/media/video/house.mp4');
-    } else if(choice === '1222'){
-      changeVideo('assets/media/video/plane.mp4');
-    } else if(choice === '1223'){
-      changeVideo('assets/media/video/skyscraper.mp4');
-    } else if (choice === '2') {
+  } else if (choice === '1222' || choice === '212') {
+    changeVideo('assets/media/video/plane.mp4');
+  } else if (choice === '1223') {
+    changeVideo('assets/media/video/skyscraper.mp4');
+  } else if (choice === '2') {
     changeAudio('assets/media/audio/gospel-choir-heavenly-transition-3-186880.mp3');
     changeVideo('assets/media/video/wedding.mp4');
   } else if (choice === '21') {
@@ -384,12 +381,32 @@ function firstChoice(event) {
     changeVideo('assets/media/video/homeless.mp4');
   } else if (choice === '2111') {
     changeVideo('assets/media/video/journal.mp4')
-  } else if(choice === '2112'){
+  } else if (choice === '2112') {
     changeVideo('assets/media/video/heart_beat.mp4');
     video.loop = false;
-  };
+  } else if (choice === '213') {
+    changeAudio('assets/media/audio/my-music-is-my-feeling-227878.mp3');
+    changeVideo('assets/media/video/lovers.mp4');
+  } else if (choice === '22') {
+    changeAudio('assets/media/audio/sad-violin-150146.mp3');
+    changeVideo('assets/media/video/accident.mp4');
+  } else if (choice === '221' || choice === '23') {
+    changeVideo('assets/media/video/family.mp4');
+    changeAudio('assets/media/audio/time-166273.mp3');
+  } else if (choice === '222') {
+    changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
+    changeVideo('assets/media/video/run.mp4');
+  } else if (choice === '231') {
+    changeVideo('assets/media/video/meteor.mp4');
+  } else if (choice === '232'){
+    changeVideo('assets/media/video/suburb.mp4');
+  } else if(choice === '2321'){
+    changeVideo('assets/media/video/explosion.mp4');
+  } else if (choice === '2322'){
+    changeVideo('assets/media/video/shelter.mp4');
+  }
 
-}
+};
 // Function for moving to the next scenario based on the previous choice
 function nextChoice() {
   let scenario = gamePlay[choice];
