@@ -87,6 +87,10 @@ a:hover {
     text-align: center;
 }
 
+#game-text {
+    padding-top: 5px;
+}
+
 #reset-game {
     position: absolute;
     bottom: 10px;
@@ -101,9 +105,9 @@ a:hover {
 /*Position of the mute/unmute audio button*/
 #audio-btn {
     position: absolute;
-    bottom: 5px;
+    top: 5px;
     border: none;
-    background-color: salmon;
+    background-color: transparent;
 }
 
 /*Style for the video*/
