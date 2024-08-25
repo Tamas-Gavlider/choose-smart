@@ -352,7 +352,7 @@ function firstChoice(event) {
     changeVideo('assets/media/video/skyscraper.mp4');
   } else if (choice === '142') {
     changeVideo('assets/media/video/astronaut.mp4');
-  } else if (choice === '11') {
+  } else if (choice === '11' || choice === '31') {
     changeAudio('assets/media/audio/time-166273.mp3');
     changeVideo('assets/media/video/peaceful.mp4');
   } else if (choice === '111') {
@@ -404,6 +404,9 @@ function firstChoice(event) {
     changeVideo('assets/media/video/explosion.mp4');
   } else if (choice === '2322'){
     changeVideo('assets/media/video/shelter.mp4');
+  } else if(choice === '3'){
+    changeAudio('assets/media/audio/believe-in-yourself-background-music-for-video-jazz-version-50-sec-232612.mp3');
+    changeVideo('assets/media/video/mind.mp4');
   }
 
 };
