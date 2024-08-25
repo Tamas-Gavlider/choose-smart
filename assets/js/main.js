@@ -235,7 +235,7 @@ const gamePlay = {
     choices: {}
   },
   "33": {
-    text: "You wake up in a two-bedroom apartment. You’ve exhausted your energy. You play online poker to afford your apartment and your daily dose of drugs. It is 11 AM. You’re eating cereal while watching South Park when the show gets interrupted. Annoyed, you turn off the TV.\n\nYou start playing poker again. A pop-up ad invites you to test your knowledge and offers $10,000 if you pass the test. What do you do?",
+    text: "You wake up in a two-bedroom apartment. You’ve exhausted your energy. You play online poker to afford your apartment and your daily dose of drugs. It is 11 AM. You’re eating cereal while watching your favourite serial when the show gets interrupted. Annoyed, you turn off the TV.\n\nYou start playing poker again. A pop-up ad invites you to test your knowledge and offers $10,000 if you pass the test. What do you do?",
     choices: {
       "1": "Close the ad.",
       "2": "Click on the ad."
@@ -334,9 +334,9 @@ function firstChoice(event) {
   if (choice === '312' || choice === '2211') {
     loopGame();
     game();
-    changeAudio('assets/media/audio/sad-epic-cinematic-music-classical-233797.mp3');
-    video.style.display = 'none';
-  } else if (choice === '1') {
+    changeVideo('assets/media/video/birthday.mp4')
+    changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
+  } else if (choice === '1' || choice === '34') {
     changeAudio('assets/media/audio/drive-breakbeat-173062.mp3');
     changeVideo('assets/media/video/money.mp4');
   } else if (choice === '13') {
@@ -348,9 +348,9 @@ function firstChoice(event) {
     changeVideo('assets/media/video/father.mp4');
   } else if (choice === '14') {
     changeAudio('assets/media/audio/sad-moment-sad-and-melancholy-piano-background-music-124488.mp3');
-  } else if (choice === '141') {
+  } else if (choice === '141' || choice === '322') {
     changeVideo('assets/media/video/skyscraper.mp4');
-  } else if (choice === '142') {
+  } else if (choice === '142' || choice === '321') {
     changeVideo('assets/media/video/astronaut.mp4');
   } else if (choice === '11' || choice === '31') {
     changeAudio('assets/media/audio/time-166273.mp3');
@@ -359,7 +359,7 @@ function firstChoice(event) {
     changeVideo('assets/media/video/street.mp4');
   } else if (choice === '112') {
     changeVideo('assets/media/video/home.mp4');
-  } else if (choice === '113' || choice === '121' || choice === '223') {
+  } else if (choice === '113' || choice === '121' || choice === '223' || choice === '331'|| choice === '341') {
     changeAudio('assets/media/audio/funeral-165257.mp3');
     changeVideo('assets/media/video/funeral.mp4');
   } else if (choice === '122') {
@@ -407,6 +407,19 @@ function firstChoice(event) {
   } else if(choice === '3'){
     changeAudio('assets/media/audio/believe-in-yourself-background-music-for-video-jazz-version-50-sec-232612.mp3');
     changeVideo('assets/media/video/mind.mp4');
+  } else if(choice === '311'){
+    changeVideo('assets/media/video/friends.mp4');
+  } else if(choice === '32'){
+    changeVideo('assets/media/video/panic.mp4');
+    changeAudio('assets/media/audio/cthulhu-tension-cinematic-209274.mp3');
+  } else if(choice === '33'){
+    changeVideo('assets/media/video/laptop.mp4');
+  } else if (choice === '332'){
+     changeVideo('assets/media/video/spacestation.mp4');
+     changeAudio('assets/media/audio/space-intro-124261.mp3');
+  } else {
+    changeVideo('assets/media/video/hand.mp4');
+    changeAudio('assets/media/audio/gospel-choir-heavenly-transition-3-186880.mp3');
   }
 
 };
