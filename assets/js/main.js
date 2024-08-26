@@ -271,9 +271,11 @@ const gamePlay = {
 
 function getStarted() {
   let name = document.getElementById('name').value;
+  // First string will be capitalized
+  let capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
   let age = document.getElementById('age').value;
   let div = document.getElementById('player-details');
-  div.innerHTML = `<div id='player-details'><p>Hello ${name}! You had ${age} years to learn that all your actions have consequences!</p>
+  div.innerHTML = `<div id='player-details'><p>Hello ${capitalizedName}! You had ${age} years to learn that all your actions have consequences!</p>
     <p>Are you ready to play?</p>
     <a href='instructions.html'>How to play?</a>
     <a href='game.html'>Start game</a></div>`;
