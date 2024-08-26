@@ -11,7 +11,6 @@ body {
     color: rgb(51, 49, 49);
     background-color: salmon;
     margin-left: 5px;
-
 }
 
 a {
@@ -57,11 +56,16 @@ a:hover {
 
 }
 
-/*BG image on game page */
+/*BG color on game page */
 
 #game-body {
     background-color: salmon;
     color: rgb(51, 49, 49);
+}
+
+/*Hide elements in header on game page*/
+.hidden-element {
+    display: none;
 }
 
 /*Flex for the game page*/
@@ -91,11 +95,17 @@ a:hover {
     padding-top: 5px;
 }
 
+/*Padding between footer and video*/
+main {
+    padding-bottom: 26px;
+}
+
+/* Go back to the index html */
+
 #reset-game {
-    position: absolute;
-    bottom: 10px;
-    color: rgb(51, 49, 49);
-    text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: x-large;
 }
 
 #reset-game:hover {
@@ -104,20 +114,28 @@ a:hover {
 
 /*Position of the mute/unmute audio button*/
 #audio-btn {
-    position: absolute;
-    top: 5px;
     border: none;
     background-color: transparent;
+    font-size: x-large;
+    margin-left: 31%;
+}
+
+/* Make the reset and mute/unmute button to fixed postion on the bottom of the page*/
+footer {
+    position: fixed;
+    background-color: gray;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 /*Style for the video*/
 
 #video {
     width: 97.5%;
-    height: auto;
     max-width: 600px;
     display: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #000;
-    margin-top: 30px;
+    margin-top: 15px;
 }

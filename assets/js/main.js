@@ -352,9 +352,11 @@ function firstChoice(event) {
     changeVideo('assets/media/video/skyscraper.mp4');
   } else if (choice === '142' || choice === '321') {
     changeVideo('assets/media/video/astronaut.mp4');
-  } else if (choice === '11' || choice === '31' || choice === '123') {
+  } else if (choice === '11' || choice === '31') {
     changeAudio('assets/media/audio/time-166273.mp3');
+    changeVideo('assets/media/video/peaceful.mp4');
   } else if (choice === '123') {
+    changeAudio('assets/media/audio/time-166273.mp3');
     changeVideo('assets/media/video/dog.mp4')
   } else if (choice === '111') {
     changeVideo('assets/media/video/street.mp4');
@@ -464,7 +466,7 @@ function controlMusic() {
 function changeAudio(newAudio) {
   audioSource.src = newAudio;
   sound.load();
-  sound.play();
+  
 }
 
 // Add video at specific scenarios
@@ -474,7 +476,7 @@ function changeVideo(newVideo) {
   video.src = newVideo;
   video.style.display = 'unset';
   video.load();
-  video.play();
+  
 }
 
 // Gameplay function which initiates the game

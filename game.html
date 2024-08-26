@@ -15,9 +15,11 @@
 </head>
 
 <body id="game-body">
+    <header><h1 class="hidden-element">Enjoy the game</h1></header>
+    <main>
     <div id="game">
-    <h2 id="heading">Happy birthday. Wish something!</h2>
-    <p id="game-text"></p>
+        <h2 id="heading">Happy birthday. Wish something!</h2>
+        <p id="game-text"></p>
 
         <div>
             <button class="choice-btn" id="choice1">
@@ -36,28 +38,32 @@
         </div>
         <div>
             <button class="choice-btn" id="choice4">
-               
+
             </button>
         </div>
         <div id="loop"></div>
-    
-    <a href="index.html" id="reset-game">Reset game</a>
-</div>
- <!--Soundtrack with mute/unmute button-->
- <audio id="audio" loop autoplay muted>
-    <source src="assets/media/audio/happy-birthday-220024.mp3" id="audioSource" type="audio/mpeg">
 
-    <span>
-        Your browser doesn't support HTML5 audio:
-    </span>
-</audio>
-<button type="submit" id="audio-btn"><i class="fa-solid fa-volume-xmark"></i></button>
-<!--Font awesome kit for mute/unmute logo-->
-<script src="https://kit.fontawesome.com/7b140d41c7.js" crossorigin="anonymous"></script>
-<video src='' type="video/mp4" id='video' autoplay loop muted playsinline>
-    <p>Your browser doesn't support HTML5 video.</p>
-    <a href=>Link to the video.</a>
-</video>
+
+    </div>
+    <video src='' type="video/mp4" id='video' autoplay loop muted playsinline>
+        <p>Your browser doesn't support HTML5 video.</p>
+        <a href=>Link to the video.</a>
+    </video>
+</main>
+    <footer><a href="index.html" id="reset-game">Reset game</a>
+        <!--Soundtrack with mute/unmute button-->
+        <audio id="audio" loop autoplay muted>
+            <source src="assets/media/audio/happy-birthday-220024.mp3" id="audioSource" type="audio/mpeg">
+
+            <span>
+                Your browser doesn't support HTML5 audio:
+            </span>
+        </audio>
+
+        <button type="submit" id="audio-btn"><i class="fa-solid fa-volume-xmark"></i></button>
+    </footer>
+    <!--Font awesome kit for mute/unmute logo-->
+    <script src="https://kit.fontawesome.com/7b140d41c7.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/main.js"></script>
 </body>
