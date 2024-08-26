@@ -83,6 +83,12 @@ a:hover {
     display: none;
 }
 
+/*Footer on index html*/
+
+#contact {
+    font-size: xx-large;
+}
+
 /*Flex for the main on game page*/
 #game {
     display: flex;
