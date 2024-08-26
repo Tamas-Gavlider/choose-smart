@@ -352,14 +352,15 @@ function firstChoice(event) {
     changeVideo('assets/media/video/skyscraper.mp4');
   } else if (choice === '142' || choice === '321') {
     changeVideo('assets/media/video/astronaut.mp4');
-  } else if (choice === '11' || choice === '31') {
+  } else if (choice === '11' || choice === '31' || choice === '123') {
     changeAudio('assets/media/audio/time-166273.mp3');
-    changeVideo('assets/media/video/peaceful.mp4');
+  } else if (choice === '123') {
+    changeVideo('assets/media/video/dog.mp4')
   } else if (choice === '111') {
     changeVideo('assets/media/video/street.mp4');
   } else if (choice === '112') {
     changeVideo('assets/media/video/home.mp4');
-  } else if (choice === '113' || choice === '121' || choice === '223' || choice === '331'|| choice === '341') {
+  } else if (choice === '113' || choice === '121' || choice === '223' || choice === '331' || choice === '341') {
     changeAudio('assets/media/audio/funeral-165257.mp3');
     changeVideo('assets/media/video/funeral.mp4');
   } else if (choice === '122') {
@@ -398,26 +399,26 @@ function firstChoice(event) {
     changeVideo('assets/media/video/run.mp4');
   } else if (choice === '231') {
     changeVideo('assets/media/video/meteor.mp4');
-  } else if (choice === '232'){
+  } else if (choice === '232') {
     changeVideo('assets/media/video/suburb.mp4');
-  } else if(choice === '2321'){
+  } else if (choice === '2321') {
     changeVideo('assets/media/video/explosion.mp4');
-  } else if (choice === '2322'){
+  } else if (choice === '2322') {
     changeVideo('assets/media/video/shelter.mp4');
-  } else if(choice === '3'){
+  } else if (choice === '3') {
     changeAudio('assets/media/audio/believe-in-yourself-background-music-for-video-jazz-version-50-sec-232612.mp3');
     changeVideo('assets/media/video/mind.mp4');
-  } else if(choice === '311'){
+  } else if (choice === '311') {
     changeVideo('assets/media/video/friends.mp4');
-  } else if(choice === '32'){
+  } else if (choice === '32') {
     changeVideo('assets/media/video/panic.mp4');
     changeAudio('assets/media/audio/cthulhu-tension-cinematic-209274.mp3');
-  } else if(choice === '33'){
+  } else if (choice === '33') {
     changeVideo('assets/media/video/laptop.mp4');
-  } else if (choice === '332'){
-     changeVideo('assets/media/video/spacestation.mp4');
-     changeAudio('assets/media/audio/space-intro-124261.mp3');
-  } else {
+  } else if (choice === '332') {
+    changeVideo('assets/media/video/spacestation.mp4');
+    changeAudio('assets/media/audio/space-intro-124261.mp3');
+  } else if (choice === '342') {
     changeVideo('assets/media/video/hand.mp4');
     changeAudio('assets/media/audio/gospel-choir-heavenly-transition-3-186880.mp3');
   }
