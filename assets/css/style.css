@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: yellow;
+    color: salmon;
 }
 
 /*Style for the index html*/
@@ -42,7 +42,7 @@ a:hover {
 }
 
 #player-details a:hover {
-    color: yellow;
+    color: salmon;
 }
 
 /*Style the name and age form on index*/
@@ -112,12 +112,11 @@ main {
 
 #reset-game {
     padding-bottom: 5px;
-    padding-left: 5px;
     font-size: x-large;
 }
 
 #reset-game:hover {
-    color: yellow;
+    color: salmon;
 }
 
 /*Position of the mute/unmute audio button*/
@@ -125,7 +124,6 @@ main {
     border: none;
     background-color: transparent;
     font-size: x-large;
-    margin-left: 31%;
     color: whitesmoke;
 }
 
@@ -142,6 +140,14 @@ footer {
     box-shadow: 0 2px 2px black;
 }
 
+#nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /*Style for the video*/
 
 #video {
@@ -151,5 +157,15 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #000;
     margin-top: 15px;
+}
+
+/*Leave empty space on the right side on isntructions*/
+#instructions {
+    padding-right: 5px;
+}
+
+.nav-btn {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 

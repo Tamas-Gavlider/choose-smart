@@ -277,8 +277,8 @@ function getStarted() {
   let div = document.getElementById('player-details');
   div.innerHTML = `<div id='player-details'><p>Hello ${capitalizedName}! You had ${age} years to learn that all your actions have consequences!</p>
     <p>Are you ready to play?</p>
-    <a href='instructions.html'>How to play?</a>
-    <a href='game.html'>Start game</a></div>`;
+    <a href='instructions.html' class='nav-btn'>How to play?</a>
+    <a href='game.html' class='nav-btn'>Start game</a></div>`;
 
 };
 let form = document.getElementById('entry');
@@ -323,16 +323,8 @@ function loopGame() {
   loop.innerHTML = `<a href='game.html' id=loop-link>Come on, it’s your birthday. You need to wish for something...</a> `;
 };
 
-// Store the previous choice 
-let choice = '';
-//Get the value of the first choice
-function firstChoice(event) {
-  // Use the choice number by removing the choice word and append its number only
-  choice += event.target.id.replace('choice', '');
-  // Move to the next scenario
-  nextChoice();
-  removeHeading();
-  hideButton();
+// Changing audio & video based on the decision
+function visualForDecisions(choice) {
   if (choice === '312' || choice === '2211') {
     loopGame();
     game();
@@ -426,7 +418,19 @@ function firstChoice(event) {
     changeVideo('assets/media/video/hand.mp4');
     changeAudio('assets/media/audio/gospel-choir-heavenly-transition-3-186880.mp3');
   }
+};
 
+
+// Store the previous choice 
+let choice = '';
+//Get the value of the first choice
+function firstChoice(event) {
+  // Use the choice number by removing the choice word and append its number only
+  choice += event.target.id.replace('choice', '');
+  nextChoice();
+  removeHeading();
+  hideButton();
+  visualForDecisions(choice);
 };
 // Function for moving to the next scenario based on the previous choice
 function nextChoice() {
@@ -468,7 +472,7 @@ function controlMusic() {
 function changeAudio(newAudio) {
   audioSource.src = newAudio;
   sound.load();
-  
+
 }
 
 // Add video at specific scenarios
@@ -478,7 +482,7 @@ function changeVideo(newVideo) {
   video.src = newVideo;
   video.style.display = 'unset';
   video.load();
-  
+
 }
 
 // Gameplay function which initiates the game
