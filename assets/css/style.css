@@ -13,6 +13,12 @@ body {
     margin-left: 5px;
 }
 
+/*Base color for header*/
+header {
+    color: whitesmoke;
+}
+
+/*Style for the a element*/
 a {
     color: whitesmoke;
     text-decoration: none;
@@ -59,14 +65,16 @@ a:hover {
     margin-top: 20px;
 }
 
-/*BG color on game page */
+/*Padding for the buttons after the name and age are provided by user*/
+.nav-btn {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*BG and font color on game page */
 
 #game-body {
     background-color: #1C1C1C;
-    color: whitesmoke;
-}
-
-header {
     color: whitesmoke;
 }
 
@@ -75,7 +83,7 @@ header {
     display: none;
 }
 
-/*Flex for the game page*/
+/*Flex for the main on game page*/
 #game {
     display: flex;
     flex-direction: column;
@@ -140,6 +148,7 @@ footer {
     box-shadow: 0 2px 2px black;
 }
 
+/* Add flex for the nav logos in footer*/
 #nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -164,8 +173,5 @@ footer {
     padding-right: 5px;
 }
 
-.nav-btn {
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
+
 
