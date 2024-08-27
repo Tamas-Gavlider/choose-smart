@@ -279,6 +279,9 @@ function getStarted() {
     
     <a href='instructions.html' class='nav-btn hover-effects'>How to play?</a>
     <a href='game.html' class='nav-btn hover-effects' id='start-game'>Start game</a></div>`;
+    // Keep the feedback arrows at the same position after user submit name and age
+    let feedback = document.getElementById('feedback');
+    feedback.style.marginTop = '225px';
 
 };
 let form = document.getElementById('entry');
@@ -448,7 +451,6 @@ function eventListeners() {
   choice2.addEventListener('click', firstChoice);
   choice3.addEventListener('click', firstChoice);
   choice4.addEventListener('click', firstChoice);
-  soundtrackButton.addEventListener('click', controlMusic)
 };
 
 // Mute/unmute audio 
@@ -466,6 +468,8 @@ function controlMusic() {
     soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
   }
 }
+
+soundtrackButton.addEventListener('click', controlMusic);
 
 // Change audio at specific scenarios
 

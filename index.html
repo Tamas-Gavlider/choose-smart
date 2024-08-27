@@ -23,12 +23,18 @@
             <p>To start the game enter the details below</p>
             <form id="entry" action="index.html">
                 <label for='name'>Enter your name</label>
-                <input type="text" id="name" name='name' required>
+                <input type="text" id="name" name='name' class="input-field" required>
                 <label for="age">How old are you?</label>
-                <input type="number" id="age" required>
-                <button id="start-button" type="submit">Start Game</button>
+                <input type="number" id="age" class='input-field' required>
+                <button id="start-button" type="submit" class='choice-btn hover-effects'>Start Game</button>
             </form>
         </div>
+        <div id="feedback">
+        <p class="arrows">Leave your feedback</p>
+        <p class="arrows"><i class="fa-solid fa-arrow-down"></i></p>
+        <p class="arrows arrow2"><i class="fa-solid fa-arrow-down"></i></p>
+        <p class="arrows arrow3"><i class="fa-solid fa-arrow-down"></i></p>
+    </div>
     </main>
     <footer>
         <a href="mailto:tamasgavlider@gmail.com?subject=Choose Smart Feedback" id="contact" class="hover-effects"><i

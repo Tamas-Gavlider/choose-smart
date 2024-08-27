@@ -16,7 +16,16 @@ body {
 /*Base color for header*/
 header {
     color: whitesmoke;
-    animation: blinker 1s linear infinite;
+    animation: blinker 4s linear infinite;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px blue,
+        0 0 82px blue,
+        0 0 92px blue,
+        0 0 102px blue,
+        0 0 151px blue;
 }
 
 /*Blinking text effect*/
@@ -48,6 +57,10 @@ a {
 
 }
 
+.input-field {
+    margin: 10px 0;
+}
+
 #player-details p {
     margin-left: 5px;
 }
@@ -70,6 +83,39 @@ a {
 #start-button {
     margin-right: 50px;
     margin-top: 20px;
+    border: none;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px blue,
+        0 0 82px blue,
+        0 0 92px blue,
+        0 0 102px blue,
+        0 0 151px blue;
+}
+
+/*Style the Feedback sign with arrows*/
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px blue,
+        0 0 82px blue,
+        0 0 92px blue,
+        0 0 102px blue,
+        0 0 151px blue;
+        animation: blinker 4s linear infinite;
 }
 
 /*Style for the buttons after the name and age are provided by user*/
@@ -79,7 +125,8 @@ a {
     font-size: xx-large;
     position: absolute;
     bottom: 420px;
-    animation: blinker 1s linear infinite;
+    animation: blinker 4s linear infinite;
+
 }
 
 /*BG and font color on game page */
@@ -108,10 +155,11 @@ a {
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    gap: 15px;
 }
 
 #heading {
-    animation: blinker 1s linear infinite;
+    animation: blinker 4s linear infinite;
 }
 
 /*Style for the buttons on the game page*/
@@ -121,6 +169,8 @@ a {
     padding-bottom: 5px;
     background-color: #1C1C1C;
     color: whitesmoke;
+    border: none;
+    font-size: large;
 
 }
 
@@ -139,6 +189,16 @@ a {
 
 #game h2 {
     text-align: center;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px red,
+        0 0 82px red,
+        0 0 92px red,
+        0 0 102px red,
+        0 0 151px red;
 }
 
 #game-text {
@@ -201,6 +261,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    gap: 5px;
 }
 
 /*Style for the video*/

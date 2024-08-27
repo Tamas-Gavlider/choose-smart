@@ -18,6 +18,7 @@
     <header>
         <h1>How to play?</h1>
     </header>
+    <!--Instructions-->
     <main id="instructions">
         <h2>Objective of the Game</h2>
         <p>Navigate through the story by making choices that affect the outcome.</p>
@@ -39,9 +40,22 @@
         <p>For full experience, make sure your sound is on. Tap the sound icon in the corner to mute or unmute the
             audio.</p>
     </main>
+    <!--Footer with nav links-->
     <footer>
-        <a href="game.html" class="hover-effects">Start Game</a>
+        <div id="nav-links">
+            <a href="index.html" id="reset-game" class="hover-effects"><i class="fa-solid fa-house"></i></a>
+            <a href="game.html" class="hover-effects"><i class="fa-solid fa-play"></i></a>
+            <audio id="audio" loop autoplay muted>
+                <source src="assets/media/audio/sad-violin-150146.mp3" id="audioSource" type="audio/mpeg">
+                <span>
+                    Your browser doesn't support HTML5 audio:
+                </span>
+            </audio>
+            <button type="submit" id="audio-btn" class="hover-effects"><i class="fa-solid fa-volume-xmark"></i></button>
+        </div>
     </footer>
+    <!--Font awesome kit-->
+    <script src="https://kit.fontawesome.com/7b140d41c7.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/main.js"></script>
 </body>
