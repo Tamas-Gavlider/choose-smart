@@ -19,13 +19,19 @@ header {
     animation: blinker 1s linear infinite;
 }
 
-/*Blinking text effect*/ 
+/*Blinking text effect*/
 
 @keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
+
+/**/
+
+#start-game {
+    bottom: 300px;
+}
 
 /*Style for the a element*/
 a {
@@ -34,9 +40,17 @@ a {
 }
 
 a:hover {
-    color: salmon;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
-
 /*Style for the index html*/
 
 #player-details {
@@ -57,7 +71,16 @@ a:hover {
 }
 
 #player-details a:hover {
-    color: salmon;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 /*Style the name and age form on index*/
@@ -74,10 +97,14 @@ a:hover {
     margin-top: 20px;
 }
 
-/*Padding for the buttons after the name and age are provided by user*/
+/*Style for the buttons after the name and age are provided by user*/
 .nav-btn {
     padding-top: 10px;
     padding-bottom: 5px;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 420px;
+    animation: blinker 1s linear infinite;
 }
 
 /*BG and font color on game page */
@@ -122,6 +149,19 @@ a:hover {
 
 }
 
+.choice-btn:hover {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+
 #game h2 {
     text-align: center;
 }
@@ -143,7 +183,16 @@ main {
 }
 
 #reset-game:hover {
-    color: salmon;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 /*Position of the mute/unmute audio button*/
@@ -192,6 +241,3 @@ footer {
 #instructions {
     padding-right: 5px;
 }
-
-
-

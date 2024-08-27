@@ -276,9 +276,9 @@ function getStarted() {
   let age = document.getElementById('age').value;
   let div = document.getElementById('player-details');
   div.innerHTML = `<div id='player-details'><p>Hello ${capitalizedName}! You had ${age} years to learn that all your actions have consequences!</p>
-    <p>Are you ready to play?</p>
+    
     <a href='instructions.html' class='nav-btn'>How to play?</a>
-    <a href='game.html' class='nav-btn'>Start game</a></div>`;
+    <a href='game.html' class='nav-btn' id='start-game'>Start game</a></div>`;
 
 };
 let form = document.getElementById('entry');
