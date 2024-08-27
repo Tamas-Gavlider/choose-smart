@@ -16,7 +16,16 @@ body {
 /*Base color for header*/
 header {
     color: whitesmoke;
+    animation: blinker 1s linear infinite;
 }
+
+/*Blinking text effect*/ 
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 /*Style for the a element*/
 a {
@@ -97,6 +106,10 @@ a:hover {
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#heading {
+    animation: blinker 1s linear infinite;
 }
 
 /*Style for the buttons on the game page*/
