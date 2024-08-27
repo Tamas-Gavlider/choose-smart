@@ -39,18 +39,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
-}
 /*Style for the index html*/
 
 #player-details {
@@ -68,19 +56,6 @@ a:hover {
     margin-left: 5px;
     color: whitesmoke;
     text-decoration: none;
-}
-
-#player-details a:hover {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
 }
 
 /*Style the name and age form on index*/
@@ -155,11 +130,11 @@ a:hover {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px red,
+        0 0 82px red,
+        0 0 92px red,
+        0 0 102px red,
+        0 0 151px red;
 }
 
 #game h2 {
@@ -182,7 +157,8 @@ main {
     font-size: x-large;
 }
 
-#reset-game:hover {
+/*Neon effect for nav links and a elements*/
+.hover-effects:hover {
     color: #fff;
     text-shadow:
         0 0 7px #fff,
@@ -202,6 +178,7 @@ main {
     font-size: x-large;
     color: whitesmoke;
 }
+
 
 /* Make the reset and mute/unmute button to fixed postion on the bottom of the page*/
 footer {
