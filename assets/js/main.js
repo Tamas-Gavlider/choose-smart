@@ -281,7 +281,7 @@ function getStarted() {
     <a href='game.html' class='nav-btn hover-effects' id='start-game'>Start game</a></div>`;
     // Keep the feedback arrows at the same position after user submit name and age
     let feedback = document.getElementById('feedback');
-    feedback.style.marginTop = '225px';
+    feedback.style.marginTop = '105px'; 
 
 };
 let form = document.getElementById('entry');
