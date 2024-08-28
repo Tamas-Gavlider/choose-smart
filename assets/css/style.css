@@ -22,15 +22,16 @@ header {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px blue,
-        0 0 82px blue,
-        0 0 92px blue,
-        0 0 102px blue,
-        0 0 151px blue;
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 .instructions-header {
     text-align: unset;
+    animation: unset;
 }
 
 /*Blinking text effect*/
