@@ -15,30 +15,35 @@
 </head>
 
 <body id="game-body">
+    <!--Header-->
     <header>
         <h1 class="hidden-element">Enjoy the game</h1>
     </header>
+    <!--Game area-->
     <main id="game-main">
         <div id="game">
             <h2 id="heading">Happy birthday. Wish something!</h2>
             <p id="game-text"></p>
 
-         <div id="choices">
+            <div id="choices">
                 <button class="choice-btn" id="choice1">
                     Be rich!
-                </button><br>
+                </button>
+                <br>
                 <button class="choice-btn" id="choice2">
                     Find the love of my life
-                </button><br>
-
+                </button>
+                <br>
                 <button class="choice-btn" id="choice3">
                     Be the smartest people alive
-                </button><br>
-
+                </button>
+                <br>
                 <button class="choice-btn" id="choice4">
+
                 </button>
             </div>
         </div>
+        <!--Div for loop back to the start at specific scenarios-->
         <div id="loop"></div>
         <video src='' type="video/mp4" id='video' autoplay loop muted playsinline>
             <p>Your browser doesn't support HTML5 video.</p>
@@ -46,7 +51,9 @@
         </video>
         </div>
     </main>
+    <!--Footer-->
     <footer>
+        <!--Nav links-->
         <div id="nav-links">
             <a href="index.html" id="reset-game" class="hover-effects" aria-label="Return to Home Page"><i
                     class="fa-solid fa-house"></i></a>

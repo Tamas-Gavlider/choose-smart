@@ -1,3 +1,20 @@
+// Mute/unmute audio 
+let sound = document.getElementById('audio');
+let soundtrackButton = document.getElementById('audio-btn');
+let audioSource = document.getElementById('audioSource');
+
+let video = document.getElementById('video');
+
+// User choices
+const choice1 = document.getElementById('choice1');
+const choice2 = document.getElementById('choice2');
+const choice3 = document.getElementById('choice3');
+const choice4 = document.getElementById('choice4');
+
+// Paragraph which will show the consequences of the choice
+
+const consequence = document.getElementById('game-text');
+
 // Gameplay scenarios
 const gamePlay = {
   "1": {
@@ -284,17 +301,6 @@ let form = document.getElementById('entry');
 if (form) {
   form.addEventListener('submit', getStarted);
 };
-// Put on the top of the code 
-// Paragraph which will show the consequences of the choice
-
-const consequence = document.getElementById('game-text');
-// Put on the top of the code 
-// User choices
-const choice1 = document.getElementById('choice1');
-const choice2 = document.getElementById('choice2');
-const choice3 = document.getElementById('choice3');
-const choice4 = document.getElementById('choice4');
-
 // Remove button if it is empty
 function hideButton() {
   let buttons = document.getElementsByClassName('choice-btn');
@@ -419,7 +425,6 @@ function visualForDecisions(choice) {
   }
 };
 
-
 // Store the previous choice 
 let choice = '';
 //Get the value of the first choice
@@ -449,12 +454,6 @@ function eventListeners() {
   choice4.addEventListener('click', firstChoice);
 };
 
-// Put on the top of the code 
-// Mute/unmute audio 
-let sound = document.getElementById('audio');
-let soundtrackButton = document.getElementById('audio-btn');
-let audioSource = document.getElementById('audioSource');
-
 function controlMusic() {
   if (sound.muted) {
     sound.muted = false;
@@ -466,25 +465,20 @@ function controlMusic() {
   }
 };
 
-soundtrackButton.addEventListener('click', controlMusic);
-
 // Change audio at specific scenarios
 
 function changeAudio(newAudio) {
   audioSource.src = newAudio;
   sound.load();
-
 }
 
 // Add video at specific scenarios
-let video = document.getElementById('video');
 
 function changeVideo(newVideo) {
-  let baseFilepath = '/assets/media/video/';
   video.src = newVideo;
   video.style.display = 'unset';
   video.load();
-
+  
 }
 
 // Gameplay function which initiates the game
@@ -493,6 +487,9 @@ function game() {
   let path = location.pathname;
   if(path === '/game.html'){
     eventListeners();
+    soundtrackButton.addEventListener('click', controlMusic);
+  } else if(path === '/instructions.html'){
+    soundtrackButton.addEventListener('click', controlMusic);
   }
   hideButton();
 };
