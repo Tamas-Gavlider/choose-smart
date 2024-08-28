@@ -124,11 +124,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px blue,
-        0 0 82px blue,
-        0 0 92px blue,
-        0 0 102px blue,
-        0 0 151px blue;
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
         animation: blinker 4s linear infinite;
 }
 
@@ -191,11 +191,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px red,
-        0 0 82px red,
-        0 0 92px red,
-        0 0 102px red,
-        0 0 151px red;
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 #game h2 {
@@ -205,11 +205,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px red,
-        0 0 82px red,
-        0 0 92px red,
-        0 0 102px red,
-        0 0 151px red;
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 #game-text {
@@ -223,11 +223,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px red,
-        0 0 82px red,
-        0 0 92px red,
-        0 0 102px red,
-        0 0 151px red;
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
 /*Padding between footer and video*/
