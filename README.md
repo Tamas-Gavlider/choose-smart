@@ -79,3 +79,12 @@ To clone the The-Hunger-Gamers repository:
 ### Full Testing
 
 ## Credits 
+
+### Media
+
+All the video and audio files were downloaded from [Pixabay](https://pixabay.com/).
+
+### Content
+
+The blinking text effect code in CSS was found at [Stackoverflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
+The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
