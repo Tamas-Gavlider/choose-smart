@@ -13,6 +13,14 @@ body {
     margin-left: 5px;
 }
 
+/*Style for instructions html body*/
+
+#instructions-body {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
 /*Base color for header*/
 header {
     color: whitesmoke;
@@ -146,6 +154,7 @@ form {
 #game-body {
     background-color: #1C1C1C;
     color: whitesmoke;
+    font-family: 'Old+Standard+TT', sans-serif;
 }
 
 /*Hide elements in header on game page*/
@@ -223,7 +232,8 @@ form {
 }
 
 #game-text {
-    padding-top: 5px;
+    padding: 5px 10px;
+    text-align: center;
 }
 
 /*Style for the a element which will appear after specific choices*/

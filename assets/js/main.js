@@ -12,7 +12,7 @@ const gamePlay = {
   "11": {
     text: "World hunger is history. The oceans are clean again. Global warming has slowed down, all thanks to you. But all the hard work and effort to save the world and help people have taken a toll on you. Most of your money is gone. Will you spend your remaining wealth to recover and be healthy again, or fund research to cure cancer?",
     choices: {
-      "1": "Cure cancer",
+      "1": "Cure cancer", 
       "2": "Cure myself",
       "3": "Take a bath and think it over"
     }
@@ -78,10 +78,6 @@ const gamePlay = {
   },
   "132": {
     text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know,' your father says. You stay with your family for the rest of your life, making up for lost time. You feel content and at peace, knowing you made the right choice.",
-    choices: {}
-  },
-  "132": {
-    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know,' your dad says. You go to dinner, and all the family members are there. No one says a single word, and it means more than a thousand words ever could. You share one last meal together. Everyone is happy, and it feels like one of those family dinners when you were ten. After dinner, the whole family sits in the living room. The pictures on the wall fall off, the earth is shaking, and from outside, you hear people shouting, 'Look, it’s so close.' Your dad hugs you and whispers in your ear, 'I’m proud of you.'",
     choices: {}
   },
   "14": {
@@ -288,11 +284,11 @@ let form = document.getElementById('entry');
 if (form) {
   form.addEventListener('submit', getStarted);
 };
-
+// Put on the top of the code 
 // Paragraph which will show the consequences of the choice
 
 const consequence = document.getElementById('game-text');
-
+// Put on the top of the code 
 // User choices
 const choice1 = document.getElementById('choice1');
 const choice2 = document.getElementById('choice2');
@@ -453,6 +449,7 @@ function eventListeners() {
   choice4.addEventListener('click', firstChoice);
 };
 
+// Put on the top of the code 
 // Mute/unmute audio 
 let sound = document.getElementById('audio');
 let soundtrackButton = document.getElementById('audio-btn');
@@ -467,7 +464,7 @@ function controlMusic() {
     sound.muted = true;
     soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
   }
-}
+};
 
 soundtrackButton.addEventListener('click', controlMusic);
 
@@ -483,6 +480,7 @@ function changeAudio(newAudio) {
 let video = document.getElementById('video');
 
 function changeVideo(newVideo) {
+  let baseFilepath = '/assets/media/video/';
   video.src = newVideo;
   video.style.display = 'unset';
   video.load();
@@ -492,7 +490,10 @@ function changeVideo(newVideo) {
 // Gameplay function which initiates the game
 
 function game() {
-  eventListeners();
+  let path = location.pathname;
+  if(path === '/game.html'){
+    eventListeners();
+  }
   hideButton();
 };
 
