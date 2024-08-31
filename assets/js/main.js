@@ -284,7 +284,7 @@ const gamePlay = {
 
 function getStarted() {
   let name = document.getElementById('name').value;
-  // First string will be capitalized
+  // First character will be capitalized
   let capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
   let age = document.getElementById('age').value;
   let div = document.getElementById('player-details');
@@ -305,13 +305,13 @@ if (form) {
 function hideButton() {
   let buttons = document.getElementsByClassName('choice-btn');
   for (let i = 0; i < buttons.length; i++) {
-    if (buttons[i].textContent.trim() != "") {
+    if (buttons[i].textContent.trim() != "a") {
       buttons[i].style.display = 'unset';
     } else {
       buttons[i].style.display = 'none';
-    }
-  };
+    };
 };
+}
 
 // Remove the Happy Birtday header
 function removeHeading() {
