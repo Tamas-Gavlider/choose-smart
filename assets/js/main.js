@@ -1,4 +1,5 @@
 import gamePlay from './data.js';
+
 let audioSource = document.getElementById('audioSource');
 
 let video = document.getElementById('video');
@@ -101,10 +102,7 @@ function game() {
   let path = location.pathname;
   if (path === '/game.html') {
     eventListeners();
-    soundtrackButton.addEventListener('click', controlMusic);
-  } else if (path === '/instructions.html') {
-    soundtrackButton.addEventListener('click', controlMusic);
-  }
+  };
   hideButton();
 };
 

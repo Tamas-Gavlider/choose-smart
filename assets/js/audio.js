@@ -12,4 +12,6 @@ function controlMusic() {
       soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
     }
   };
+
+  soundtrackButton.addEventListener('click', controlMusic);
   
