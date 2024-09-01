@@ -99,10 +99,7 @@ function changeVideo(newVideo) {
 // Gameplay function which initiates the game
 
 function game() {
-  let path = location.pathname;
-  if (path === '/game.html') {
-    eventListeners();
-  };
+  eventListeners();
   hideButton();
 };
 

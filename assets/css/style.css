@@ -91,6 +91,7 @@ a {
 #entry {
     margin-left: 5px;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -138,7 +139,7 @@ form {
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-        animation: blinker 4s linear infinite;
+    animation: blinker 4s linear infinite;
 }
 
 /*Style for the buttons after the name and age are provided by user*/
