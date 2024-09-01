@@ -13,5 +13,7 @@ function controlMusic() {
     }
   };
 
-  soundtrackButton.addEventListener('click', controlMusic);
+
+soundtrackButton.addEventListener('click', controlMusic);
+ 
   
