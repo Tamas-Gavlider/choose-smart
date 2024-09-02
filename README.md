@@ -25,6 +25,28 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 ### Colour Scheme
 
+### Wireframe
+
+Wireframes were created for mobile, tablet and desktop.
+
+Index page:
+[Mobile](/docs/wireframe/index-mobile.png)<br>
+[Tablet](/docs/wireframe/index-tablet.png)<br>
+[Desktop](/docs/wireframe/index-browser.png)<br>
+Index page after the Start Game button pressed:
+[Mobile](/docs/wireframe/index-after-details-mobile.png)<br>
+[Tablet](/docs/wireframe/index-after-details-tablet.png)<br>
+[Desktop](/docs/wireframe/index-after-details-desktop.png)<br>
+Instructions page:
+[Mobile](/docs/wireframe/instructions-mobile.png)<br>
+[Tablet](/docs/wireframe/instructions-tablet.png)<br>
+[Desktop](/docs/wireframe/instructions-desktop.png)<br>
+Game page:
+[Mobile](/docs/wireframe/game-mobile.png)<br>
+[Tablet](/docs/wireframe/game-tablet.png)<br>
+[Desktop](/docs/wireframe/game-desktop.png)
+
+
 ### Typography
 
 ### Imagery
@@ -44,6 +66,8 @@ Git - for Version Control.
 Github - To save and store the files for the website.
 
 Google Fonts - To import the fonts used on the website.
+
+Balsamiq - Used to create wireframes.
 
 Font Awesome - Used for icon and logo images.
 
@@ -102,9 +126,22 @@ The following issues were raised during my mid project meeting with my mentor:
 
 ### W3C Validator
 
-The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+The [W3C](https://validator.w3.org/) validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
 
-[Index HTML](/docs/testing/validator/w3c-index.png)
+[index.html](/docs/testing/validator/w3c-index.png)<br>
+[instructions.html](/docs/testing/validator/w3c-instructions.png)<br>
+[game.html](/docs/testing/validator/w3c-game.png)<br>
+[style.css](/docs/testing/validator/css-validation.png)
+
+
+### JavaScript Validator
+
+[jshint](https://jshint.com/) was used to validate the JavaScript files.
+
+[main.js](/docs/testing/validator/main-js-test.png)<br>
+[audio.js](/docs/testing/validator/audio-js-test.png)<br>
+[start.js](/docs/testing/validator/start-js-test.png)<br>
+[data.js](/docs/testing/validator/data-js-test.png)
 
 ### Lighthouse
 
@@ -112,7 +149,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Wave
 
-### Jshint
+All 3 pages were tested at [Wave](https://wave.webaim.org/).
 
 ### Full Testing
 
@@ -123,7 +160,7 @@ I also used Google Chrome Developer Tools to ensure that each page is responsive
 
 ### Media
 
-All the video and audio files were downloaded from [Pixabay](https://pixabay.com/).
+All the video and audio files were downloaded from [Pixabay](https://pixabay.com/).<br>
 All screenshots used in this README file were taken by myself.
 
 ### Content
