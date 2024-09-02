@@ -25,6 +25,8 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 ### Colour Scheme
 
+The design features a black background complemented by neon green and whitesmoke colors. Neon green is applied to headers, buttons, and as a hover effect for navigation links, enhancing the page's sense of mystery.
+
 ### Wireframe
 
 Wireframes were created for mobile, tablet and desktop.
@@ -49,7 +51,8 @@ Game page:
 
 ### Typography
 
-### Imagery
+Google Fonts was used to import the chosen fonts for use in the site.<br>
+I chose the Lexend font because the game heavily emphasizes reading text. This font was specifically designed with dyslexia in mind, featuring wider letter spacing and consistent letter shapes to enhance readability.
 
 ### Features
 
@@ -121,9 +124,6 @@ The following issues were raised during my mid project meeting with my mentor:
  - The source code contained too many unnecessary whitespaces and lack of comments.
  - Move the game data into a new js file and import it into the main js file 
 
-
-### Known Bugs
-
 ### W3C Validator
 
 The [W3C](https://validator.w3.org/) validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
@@ -149,7 +149,14 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Wave
 
-All 3 pages were tested at [Wave](https://wave.webaim.org/).
+All 3 pages were tested at [Wave](https://wave.webaim.org/).<br>
+The game page had an error caused by an empty button element. This issue was resolved by adding a hidden span element within the button, which provided the necessary content without affecting the design.
+
+[Index page](/docs/testing/wave/wave-index-html.png)<br>
+[Instructions page](/docs/testing/wave/wave-instructions-html.png)<br>
+[Game page with the error](/docs/testing/wave/wave-game-html-error.png)<br>
+[Game page withouth error](/docs/testing/wave/wave-game-html.png)
+
 
 ### Full Testing
 

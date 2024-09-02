@@ -1,12 +1,12 @@
 /*Google fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 /*Standard style for body*/
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Old+Standard+TT', sans-serif;
+    font-family: 'Lexend', sans-serif;
     letter-spacing: 1px;
     color: whitesmoke;
     background-color: #000000;
@@ -153,7 +153,7 @@ form {
 #game-body {
     background-color: #000000;
     color: whitesmoke;
-    font-family: 'Old+Standard+TT', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 /*Hide elements in header on game page*/
