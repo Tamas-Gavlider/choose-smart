@@ -11,7 +11,25 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 ## Contents
 
-## Web Page Goal
+## User Experience (UX)
+
+### User Stories
+
+#### First Time Visitor Goals
+
+#### Returning Visitor Goals
+
+#### Frequent Visitor Goals
+
+## Design
+
+### Colour Scheme
+
+### Typography
+
+### Imagery
+
+### Features
 
 ## Technologies used
 
@@ -30,6 +48,8 @@ Google Fonts - To import the fonts used on the website.
 Font Awesome - Used for icon and logo images.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Am I Responsive](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 
 [Favicon](https://favicon.io/favicon-converter/#google_vignette) - To create Favicon.
 
@@ -68,25 +88,46 @@ To clone the The-Hunger-Gamers repository:
 1. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 1. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-## Testing
+### Testing
+
+I have used Chrome Developer tool while building the web page and troubleshoot any issues immediately.
+
+The following issues were raised during my mid project meeting with my mentor:
+
+ - The source code contained too many unnecessary whitespaces and lack of comments.
+ - Move the game data into a new js file and import it into the main js file 
+
 
 ### Known Bugs
 
 ### W3C Validator
 
+The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+
+[Index HTML](/docs/testing/validator/w3c-index.png)
+
 ### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 ### Wave
 
+### Jshint
+
 ### Full Testing
+
+I performed the following testing using a number of browsers (google chrome, safari, mozilla firefox,edge) and devices (Macbook Pro 15 inch, iMac 21.5 inch, iPhone 11, iPhone 6s and a 15 inch Dell laptop).
+I also used Google Chrome Developer Tools to ensure that each page is responsive on different screen sizes.
 
 ## Credits 
 
 ### Media
 
 All the video and audio files were downloaded from [Pixabay](https://pixabay.com/).
+All screenshots used in this README file were taken by myself.
 
 ### Content
 
+All content for the website was written by Tamas Gavlider. 
 The blinking text effect code in CSS was found at [Stack Overflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
 The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
