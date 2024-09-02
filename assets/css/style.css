@@ -9,7 +9,7 @@ body {
     font-family: 'Old+Standard+TT', sans-serif;
     letter-spacing: 1px;
     color: whitesmoke;
-    background-color: #1C1C1C;
+    background-color: #000000;
     margin-left: 5px;
 }
 
@@ -30,11 +30,11 @@ header {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px rgb(0, 255, 170),
+        0 0 82px rgb(0, 255, 170),
+        0 0 92px rgb(0, 255, 170),
+        0 0 102px rgb(0, 255, 170),
+        0 0 151px rgb(0, 255, 170);
 }
 
 .instructions-header {
@@ -102,7 +102,6 @@ form {
 }
 
 #start-button {
-    margin-right: 50px;
     margin-top: 20px;
     border: none;
     color: #fff;
@@ -110,12 +109,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
-    padding-left: 40px;
+        0 0 42px rgb(0, 255, 170),
+        0 0 82px rgb(0, 255, 170),
+        0 0 92px rgb(0, 255, 170),
+        0 0 102px rgb(0, 255, 170),
+        0 0 141px rgb(0, 255, 170);
     font-size: xx-large;
 }
 
@@ -134,11 +132,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px rgb(0, 255, 170),
+        0 0 82px rgb(0, 255, 170),
+        0 0 92px rgb(0, 255, 170),
+        0 0 102px rgb(0, 255, 170),
+        0 0 141px rgb(0, 255, 170);
     animation: blinker 4s linear infinite;
 }
 
@@ -153,7 +151,7 @@ form {
 /*BG and font color on game page */
 
 #game-body {
-    background-color: #1C1C1C;
+    background-color: #000000;
     color: whitesmoke;
     font-family: 'Old+Standard+TT', sans-serif;
 }
@@ -198,7 +196,7 @@ form {
     letter-spacing: 1px;
     margin-top: 10px;
     padding-bottom: 5px;
-    background-color: #1C1C1C;
+    background-color: #000000;
     color: whitesmoke;
     border: none;
     font-size: large;
@@ -283,7 +281,7 @@ main {
 /*Position of the mute/unmute audio button*/
 #audio-btn {
     border: none;
-    background-color: #1C1C1C;
+    background-color: #000000;
     font-size: x-large;
     color: whitesmoke;
 }
@@ -292,14 +290,14 @@ main {
 /* Make the reset and mute/unmute button to fixed postion on the bottom of the page*/
 footer {
     position: fixed;
-    background-color: #1C1C1C;
+    background-color: #000000;
     width: 100%;
     left: 0;
     bottom: 0;
     text-align: center;
     padding-bottom: 2px;
-    border-top: black;
-    box-shadow: 0 2px 2px black;
+    border-top: #000000;
+    box-shadow: 0 2px 2px #000000;
     padding-top: 5px;
 }
 
@@ -319,7 +317,7 @@ footer {
     width: 97.5%;
     display: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #000;
+    background-color: #000000;
     margin-top: 33px;
 }
 
