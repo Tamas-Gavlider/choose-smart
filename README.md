@@ -5,6 +5,8 @@ It is a decision-based game where every choice the user makes influences the sto
 Users making critical decisions that shape the narrative, leading to multiple possible endings.<br>
 Choose Smart offers a unique experience where your decisions truly matter.
 
+![amIresponsive ss](docs/testing/am-I-responsive.png)
+
 [View Choose Smart on Github Pages](https://tamas-gavlider.github.io/choose-smart/)
 
 ## Contents
@@ -15,7 +17,7 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 ### Languages used
 
-HTML,CSS and JavaScriptwere used to create this website.
+HTML,CSS and JavaScript were used to create this website.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -66,7 +68,7 @@ To clone the The-Hunger-Gamers repository:
 1. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 1. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-### Testing
+## Testing
 
 ### Known Bugs
 
@@ -86,5 +88,5 @@ All the video and audio files were downloaded from [Pixabay](https://pixabay.com
 
 ### Content
 
-The blinking text effect code in CSS was found at [Stackoverflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
+The blinking text effect code in CSS was found at [Stack Overflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
 The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
