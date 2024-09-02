@@ -14,9 +14,9 @@ function getStarted() {
     let feedback = document.getElementById('feedback');
     feedback.style.marginTop = '105px';
   
-  };
+  }
 
   let form = document.getElementById('entry');
 if (form) {
   form.addEventListener('submit', getStarted);
-};
+}

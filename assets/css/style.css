@@ -315,10 +315,10 @@ footer {
 
 #video {
     width: 97.5%;
-    display: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #000000;
     margin-top: 33px;
+    padding-left: 10px;
 }
 
 /*Leave empty space on the right side on isntructions*/

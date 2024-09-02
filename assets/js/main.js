@@ -1,6 +1,7 @@
 import gamePlay from './data.js';
 
 let audioSource = document.getElementById('audioSource');
+let sound = document.getElementById('audio');
 
 let video = document.getElementById('video');
 
@@ -22,8 +23,8 @@ function hideButton() {
       buttons[i].style.display = 'unset';
     } else {
       buttons[i].style.display = 'none';
-    };
-  };
+    }
+  }
 }
 
 // Remove the Happy Birtday header
@@ -32,14 +33,14 @@ function removeHeading() {
   if (heading) {
     heading.remove();
   }
-};
+}
 
 // Loop function to get back to the first choices at some scenarios
 
 function loopGame() {
   let loop = document.getElementById('loop');
   loop.innerHTML = `<a href='game.html' id=loop-link>Come on, it’s your birthday. You need to wish for something...</a> `;
-};
+}
 
 // Changing audio & video based on the decision
 function loopPath(choice) {
@@ -47,7 +48,7 @@ function loopPath(choice) {
     loopGame();
     game();
   }
-};
+}
 
 // Store the previous choice 
 let choice = '';
@@ -59,7 +60,7 @@ function firstChoice(event) {
   removeHeading();
   hideButton();
   loopPath(choice);
-};
+}
 // Function for moving to the next scenario based on the previous choice
 function nextChoice() {
   let scenario = gamePlay[choice];
@@ -71,14 +72,14 @@ function nextChoice() {
   changeVideo(scenario.video);
   changeAudio(scenario.audio);
   hideButton();
-};
+}
 
 function eventListeners() {
   choice1.addEventListener('click', firstChoice);
   choice2.addEventListener('click', firstChoice);
   choice3.addEventListener('click', firstChoice);
   choice4.addEventListener('click', firstChoice);
-};
+}
 
 // Change audio at specific scenarios
 
@@ -91,7 +92,6 @@ function changeAudio(newAudio) {
 
 function changeVideo(newVideo) {
   video.src = 'assets/media/video/' + newVideo;
-  video.style.display = 'unset';
   video.load();
 
 }
@@ -101,6 +101,6 @@ function changeVideo(newVideo) {
 function game() {
   eventListeners();
   hideButton();
-};
+}
 
 game();

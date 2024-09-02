@@ -11,7 +11,7 @@ function controlMusic() {
       sound.muted = true;
       soundtrackButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
     }
-  };
+  }
 
 
 soundtrackButton.addEventListener('click', controlMusic);
