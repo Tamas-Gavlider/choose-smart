@@ -31,19 +31,19 @@ The design features a black background complemented by neon green and whitesmoke
 
 Wireframes were created for mobile, tablet and desktop.
 
-Index page:
+Index page:<br>
 [Mobile](/docs/wireframe/index-mobile.png)<br>
 [Tablet](/docs/wireframe/index-tablet.png)<br>
 [Desktop](/docs/wireframe/index-browser.png)<br>
-Index page after the Start Game button pressed:
+Index page after the Start Game button pressed:<br>
 [Mobile](/docs/wireframe/index-after-details-mobile.png)<br>
 [Tablet](/docs/wireframe/index-after-details-tablet.png)<br>
 [Desktop](/docs/wireframe/index-after-details-desktop.png)<br>
-Instructions page:
+Instructions page:<br>
 [Mobile](/docs/wireframe/instructions-mobile.png)<br>
 [Tablet](/docs/wireframe/instructions-tablet.png)<br>
 [Desktop](/docs/wireframe/instructions-desktop.png)<br>
-Game page:
+Game page:<br>
 [Mobile](/docs/wireframe/game-mobile.png)<br>
 [Tablet](/docs/wireframe/game-tablet.png)<br>
 [Desktop](/docs/wireframe/game-desktop.png)
@@ -55,6 +55,10 @@ Google Fonts was used to import the chosen fonts for use in the site.<br>
 I chose the Lexend font because the game heavily emphasizes reading text. This font was specifically designed with dyslexia in mind, featuring wider letter spacing and consistent letter shapes to enhance readability.
 
 ### Features
+
+The website is comprised of a home page, a games page, and an instructions page.
+
+All Pages on the website are responsive and have:
 
 ## Technologies used
 
@@ -70,7 +74,7 @@ Github - To save and store the files for the website.
 
 Google Fonts - To import the fonts used on the website.
 
-Balsamiq - Used to create wireframes.
+[Balsamiq](https://balsamiq.com/)- Used to create wireframes.
 
 Font Awesome - Used for icon and logo images.
 
@@ -78,7 +82,7 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Am I Responsive](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 
-[Favicon](https://favicon.io/favicon-converter/#google_vignette) - To create Favicon.
+[Favicon.io](https://favicon.io/favicon-converter/#google_vignette) - To create Favicon.
 
 [Pixabay](https://pixabay.com/) - Used to donwload audio and video. 
 
@@ -102,12 +106,12 @@ How to Fork
 To fork the choose-smart repository:
 
 1. Log in (or sign up) to Github.
-1. Go to the repository for this project, Tamas-Gavlider/The-Hunger-Gamers.
+1. Go to the repository for this project, Tamas-Gavlider/choose-smart.
 1. Click the Fork button in the top right corner.
 
 ### How to Clone
 
-To clone the The-Hunger-Gamers repository:
+To clone the choose-smart repository:
 
 1. Log in (or sign up) to Github.
 1. Go to the repository for this project, Tamas-Gavlider/choose-smart.
@@ -155,7 +159,7 @@ The game page had an error caused by an empty button element. This issue was res
 [Index page](/docs/testing/wave/wave-index-html.png)<br>
 [Instructions page](/docs/testing/wave/wave-instructions-html.png)<br>
 [Game page with the error](/docs/testing/wave/wave-game-html-error.png)<br>
-[Game page withouth error](/docs/testing/wave/wave-game-html.png)
+[Game page without error](/docs/testing/wave/wave-game-html.png)
 
 
 ### Full Testing
@@ -172,6 +176,6 @@ All screenshots used in this README file were taken by myself.
 
 ### Content
 
-All content for the website was written by Tamas Gavlider. 
+All content for the website was written by myself. 
 The blinking text effect code in CSS was found at [Stack Overflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
 The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
