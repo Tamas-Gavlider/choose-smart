@@ -56,7 +56,7 @@ I chose the Old Standard TT font. This font reproduces a specific type of Modern
 
 ### Features
 
-The website is comprised of a home page, a games page, and an instructions page.
+The website is comprised of a home page, a games page, an instructions page, and a 404 page.
 
 All Pages on the website are responsive and have:
 
