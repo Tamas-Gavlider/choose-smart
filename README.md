@@ -76,7 +76,7 @@ Google Fonts - To import the fonts used on the website.
 
 [Balsamiq](https://balsamiq.com/)- Used to create wireframes.
 
-Font Awesome - Used for icon and logo images.
+[Font Awesome](https://fontawesome.com/) - Used for icon and logo images.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
@@ -127,6 +127,8 @@ The following issues were raised during my mid project meeting with my mentor:
 
  - The source code contained too many unnecessary whitespaces and lack of comments.
  - Move the game data into a new js file and import it into the main js file 
+ - Main js file included too many if else if statements for audio/video. It can be aggregated with the game data
+ - Instructions page had the text on the left side without margin or padding. 
 
 ### W3C Validator
 
@@ -149,7 +151,13 @@ The [W3C](https://validator.w3.org/) validator was used to validate the HTML on 
 
 ### Lighthouse
 
-I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.<br>
+[Index for mobile](/docs/testing/lighthouse/Lighthouse-index-mobile.png)<br>
+[Index for desktop](/docs/testing/lighthouse/Lighthouse-index-desktop.png)<br>
+[Instructions for mobile](/docs/testing/lighthouse/Lighthouse-instructions-mobile.png)<br>
+[Instructions for desktop](/docs/testing/lighthouse/Lighthouse-instructions-desktop.png)<br>
+[Game for mobile](/docs/testing/lighthouse/Lighthouse-game-mobile.png)<br>
+[Game for desktop](/docs/testing/lighthouse/Lighthouse-game-desktop.png)
 
 ### Wave
 
