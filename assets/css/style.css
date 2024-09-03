@@ -338,8 +338,8 @@ footer {
     }
 }
 
-/* Media query: tablets (800px and up)*/
-@media screen and (min-width:800px) {
+/* Media query: tablets (700px and up)*/
+@media screen and (min-width:700px) {
     #game {
         font-size: x-large;
     }
@@ -349,7 +349,7 @@ footer {
     }
 
     body {
-        font-size: xx-large;
+        font-size: 280%;
     }
 
     #game-text {

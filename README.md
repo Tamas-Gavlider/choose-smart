@@ -17,15 +17,20 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 #### First Time Visitor Goals
 
+- I want to play a game that makes me feel like I'm the one driving the story.
+- I want the site to be responsive on my device
+- I want the site to be easy navigate
+
 #### Returning Visitor Goals
 
-#### Frequent Visitor Goals
+- I want to replay the game and explore a different story path to see how the outcome changes.
 
 ## Design
 
 ### Colour Scheme
 
-The design features a black background complemented by neon green and whitesmoke colors. Neon green is applied to headers, buttons, and as a hover effect for navigation links, enhancing the page's sense of mystery.
+The design features a black background complemented by neon green and whitesmoke colors. Neon green is applied to headers, buttons, and as a hover effect for navigation links, enhancing the page's sense of mystery.<br>
+Some elements are blinking with a neon light effect, creating a tense vibe on the page.
 
 ### Wireframe
 
@@ -56,9 +61,15 @@ I chose the Old Standard TT font. This font reproduces a specific type of Modern
 
 ### Features
 
-The website is comprised of a home page, a games page, an instructions page, and a 404 page.
+The website is comprised of a home page, a games page, an instructions page, and a 404 error page.
 
 All Pages on the website are responsive and have:
+
+ - A favicon in the browser tab.
+
+#### Home Page
+
+
 
 ## Technologies used
 
@@ -137,6 +148,7 @@ The [W3C](https://validator.w3.org/) validator was used to validate the HTML on 
 [index.html](/docs/testing/validator/w3c-index.png)<br>
 [instructions.html](/docs/testing/validator/w3c-instructions.png)<br>
 [game.html](/docs/testing/validator/w3c-game.png)<br>
+[404.html](/docs/testing/validator/w3c-404-html.png)<br>
 [style.css](/docs/testing/validator/css-validation.png)
 
 
@@ -167,13 +179,20 @@ The game page had an error caused by an empty button element. This issue was res
 [Index page](/docs/testing/wave/wave-index-html.png)<br>
 [Instructions page](/docs/testing/wave/wave-instructions-html.png)<br>
 [Game page with the error](/docs/testing/wave/wave-game-html-error.png)<br>
-[Game page without error](/docs/testing/wave/wave-game-html.png)
+[Game page without error](/docs/testing/wave/wave-game-html.png)<br>
+[404 page](/docs/testing/wave/wave-404-html.png)
 
 
 ### Full Testing
 
 I performed the following testing using a number of browsers (google chrome, safari, mozilla firefox,edge) and devices (Macbook Pro 15 inch, iMac 21.5 inch, iPhone 11, iPhone 6s and a 15 inch Dell laptop).
 I also used Google Chrome Developer Tools to ensure that each page is responsive on different screen sizes.
+Each device tested the site using the following browsers:
+
+- Google Chrome
+- Safari
+- Edge
+- Firefox 
 
 ## Credits 
 
