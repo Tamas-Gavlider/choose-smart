@@ -100,7 +100,6 @@ function changeVideo(newVideo) {
 
 function game() {
   eventListeners();
-  hideButton();
 }
 
 game();

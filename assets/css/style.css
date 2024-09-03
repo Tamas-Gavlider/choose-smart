@@ -349,7 +349,11 @@ footer {
     }
 
     body {
-        font-size: 280%;
+        font-size: 220%;
+    }
+
+    #index-footer {
+        font-size: 60%;
     }
 
     #game-text {

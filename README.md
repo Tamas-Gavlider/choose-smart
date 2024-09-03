@@ -65,11 +65,17 @@ The website is comprised of a home page, a games page, an instructions page, and
 
 All Pages on the website are responsive and have:
 
- - A favicon in the browser tab.
+ - A [favicon](/docs/webpage-ss/favicon-ss.png) in the browser tab.
 
 #### Home Page
 
+#### Instructions Page
 
+#### Game Page
+
+#### 404 Error Page
+
+#### Future Implementations
 
 ## Technologies used
 
@@ -169,11 +175,13 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 [Instructions for mobile](/docs/testing/lighthouse/lighthouse-instructions-mobile.png)<br>
 [Instructions for desktop](/docs/testing/lighthouse/lighthouse-instructions-desktop.png)<br>
 [Game for mobile](/docs/testing/lighthouse/lighthouse-game-mobile.png)<br>
-[Game for desktop](/docs/testing/lighthouse/lighthouse-game-desktop.png)
+[Game for desktop](/docs/testing/lighthouse/lighthouse-game-desktop.png)<br>
+[404 for mobile](/docs/testing/lighthouse/lighthouse-404-mobile.png)<br>
+[404 for desktop](/docs/testing/lighthouse/lighthouse-404-desktop.png)
 
 ### Wave
 
-All 3 pages were tested at [Wave](https://wave.webaim.org/).<br>
+All 4 pages were tested at [Wave](https://wave.webaim.org/).<br>
 The game page had an error caused by an empty button element. This issue was resolved by adding a hidden span element within the button, which provided the necessary content without affecting the design.
 
 [Index page](/docs/testing/wave/wave-index-html.png)<br>
