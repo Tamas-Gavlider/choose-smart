@@ -5,7 +5,7 @@ It is a decision-based game where every choice the user makes influences the sto
 Users making critical decisions that shape the narrative, leading to multiple possible endings.<br>
 Choose Smart offers a unique experience where your decisions truly matter.
 
-![amIresponsive ss]()
+![amIresponsive ss](/docs/testing/am-i-responsive.png)
 
 [View Choose Smart on Github Pages](https://tamas-gavlider.github.io/choose-smart/)
 
@@ -152,12 +152,12 @@ The [W3C](https://validator.w3.org/) validator was used to validate the HTML on 
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.<br>
-[Index for mobile](/docs/testing/lighthouse/Lighthouse-index-mobile.png)<br>
-[Index for desktop](/docs/testing/lighthouse/Lighthouse-index-desktop.png)<br>
-[Instructions for mobile](/docs/testing/lighthouse/Lighthouse-instructions-mobile.png)<br>
-[Instructions for desktop](/docs/testing/lighthouse/Lighthouse-instructions-desktop.png)<br>
-[Game for mobile](/docs/testing/lighthouse/Lighthouse-game-mobile.png)<br>
-[Game for desktop](/docs/testing/lighthouse/Lighthouse-game-desktop.png)
+[Index for mobile](/docs/testing/lighthouse/lighthouse-index-mobile.png)<br>
+[Index for desktop](/docs/testing/lighthouse/lighthouse-index-desktop.png)<br>
+[Instructions for mobile](/docs/testing/lighthouse/lighthouse-instructions-mobile.png)<br>
+[Instructions for desktop](/docs/testing/lighthouse/lighthouse-instructions-desktop.png)<br>
+[Game for mobile](/docs/testing/lighthouse/lighthouse-game-mobile.png)<br>
+[Game for desktop](/docs/testing/lighthouse/lighthouse-game-desktop.png)
 
 ### Wave
 
