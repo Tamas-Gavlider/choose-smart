@@ -39,7 +39,7 @@ function removeHeading() {
 
 function loopGame() {
   let loop = document.getElementById('loop');
-  loop.innerHTML = `<a href='game.html' id=loop-link>Come on, it’s your birthday. You need to wish for something...</a> `;
+  loop.innerHTML = `<a href='game.html' id=loop-link class=centered>Come on, it’s your birthday. You need to wish for something...</a> `;
 }
 
 // Changing audio & video based on the decision

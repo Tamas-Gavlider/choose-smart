@@ -12,17 +12,21 @@ body {
     margin-left: 5px;
 }
 
+/*Center the text*/
+
+.centered {
+    text-align: center;
+}
+
 /*Style for instructions html body*/
 #instructions-body {
     margin: 5px;
     padding: 5px;
-    text-align: center;
 }
 
 /*Base color for header*/
 header {
     color: whitesmoke;
-    text-align: center;
     animation: blinker 4s linear infinite;
     text-shadow:
         0 0 7px #fff,
@@ -66,7 +70,6 @@ a {
 }
 
 #player-details {
-    text-align: center;
     gap: 50px;
 }
 
@@ -116,7 +119,6 @@ form {
 
 /*Style the Feedback text and the 404 page header*/
 .message {
-    text-align: center;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -134,11 +136,8 @@ form {
     font-size: 400%;
 }
 
-.error-text {
-    text-align: center;
-}
-
 .return-home:hover {
+    color: #fff;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -152,6 +151,7 @@ form {
 
 /*Style for the buttons after the name and age are provided by user*/
 .nav-btn {
+    display: block;
     padding-top: 10px;
     padding-bottom: 5px;
     font-size: xx-large;
@@ -220,22 +220,20 @@ form {
 }
 
 #heading {
-    text-align: center;
     color: #fff;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
 }
 
 #game-text {
     padding: 5px 10px;
-    text-align: center;
 }
 
 /*Style for the a element which will appear after specific choices*/
@@ -251,7 +249,6 @@ form {
         0 0 102px rgb(156, 255, 229),
         0 0 151px rgb(156, 255, 229);
     display: block;
-    text-align: center;
 }
 
 /*Padding between footer and video*/
@@ -294,7 +291,6 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    text-align: center;
     padding-bottom: 2px;
     border-top: #000000;
     box-shadow: 0 2px 2px #000000;
