@@ -204,6 +204,7 @@ form {
     font-size: large;
     background: transparent;
     font-family: 'Old Standard TT', sans-serif;
+    z-index: 99;
 }
 
 .choice-btn:hover {
@@ -310,7 +311,7 @@ footer {
     width: 97.5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #000000;
-    margin-top: 33px;
+    margin-top: 5px;
     padding-left: 10px;
 }
 
