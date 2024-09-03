@@ -30,11 +30,11 @@ header {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px rgb(0, 255, 170),
-        0 0 82px rgb(0, 255, 170),
-        0 0 92px rgb(0, 255, 170),
-        0 0 102px rgb(0, 255, 170),
-        0 0 151px rgb(0, 255, 170);
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
 }
 
 .instructions-header {
@@ -105,16 +105,19 @@ form {
     margin-top: 20px;
     border: none;
     color: #fff;
+    font-size: xx-large;
+}
+
+#start-button:hover {
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px rgb(0, 255, 170),
-        0 0 82px rgb(0, 255, 170),
-        0 0 92px rgb(0, 255, 170),
-        0 0 102px rgb(0, 255, 170),
-        0 0 141px rgb(0, 255, 170);
-    font-size: xx-large;
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
 }
 
 /*Style the Feedback sign with arrows*/
@@ -132,11 +135,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px rgb(0, 255, 170),
-        0 0 82px rgb(0, 255, 170),
-        0 0 92px rgb(0, 255, 170),
-        0 0 102px rgb(0, 255, 170),
-        0 0 141px rgb(0, 255, 170);
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
     animation: blinker 4s linear infinite;
 }
 
@@ -201,7 +204,7 @@ form {
     border: none;
     font-size: large;
     background: transparent;
-    font-family: 'Old Standard TT', sans-serif;
+
 
 }
 
@@ -211,11 +214,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
 }
 
 #game h2 {
@@ -244,11 +247,11 @@ form {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
     display: block;
     text-align: center;
 }
@@ -272,11 +275,11 @@ main {
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
 }
 
 /*Position of the mute/unmute audio button*/

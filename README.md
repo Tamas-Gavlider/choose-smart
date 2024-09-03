@@ -51,8 +51,8 @@ Game page:<br>
 
 ### Typography
 
-Google Fonts was used to import the chosen fonts for use in the site.<br>
-I chose the Lexend font because the game heavily emphasizes reading text. This font was specifically designed with dyslexia in mind, featuring wider letter spacing and consistent letter shapes to enhance readability.
+Google Fonts was used to import the chosen fonts for use in the site.
+I chose the Old Standard TT font. This font reproduces a specific type of Modern (classicist) style of serif typefaces, very commonly used in various editions of the late 19th and early 20th century, but almost completely abandoned later. The reason I chose this font is that it can be considered a good choice for typesetting scientific papers, especially on social and humanitarian sciences, as its specific features are closely associated in people's eyes with old books they learned on.
 
 ### Features
 
