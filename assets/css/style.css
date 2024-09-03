@@ -113,7 +113,7 @@ form {
         0 0 151px rgb(156, 255, 229);
 }
 /*Style the Feedback text*/
-#feedback {
+.message {
     text-align: center;
     text-shadow:
         0 0 7px #fff,
