@@ -1,5 +1,6 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
 /*Standard style for body*/
 body {
     margin: 0;
@@ -10,12 +11,14 @@ body {
     background-color: #000000;
     margin-left: 5px;
 }
+
 /*Style for instructions html body*/
 #instructions-body {
     margin: 5px;
     padding: 5px;
     text-align: center;
 }
+
 /*Base color for header*/
 header {
     color: whitesmoke;
@@ -31,24 +34,29 @@ header {
         0 0 102px rgb(156, 255, 229),
         0 0 151px rgb(156, 255, 229);
 }
+
 .instructions-header {
     text-align: unset;
     animation: unset;
 }
+
 /*Blinking text effect*/
 @keyframes blinker {
     50% {
         opacity: 0;
     }
 }
+
 #start-game {
     bottom: 300px;
 }
+
 /*Style for the a element*/
 a {
     color: whitesmoke;
     text-decoration: none;
 }
+
 /*Style for the index html*/
 #player-details {
     display: flex;
@@ -57,21 +65,26 @@ a {
     text-align: center;
     gap: 50px;
 }
+
 .input-field {
     margin: 10px 0;
 }
+
 #player-details p {
     margin-left: 5px;
 }
+
 #player-details a {
     margin-left: 5px;
     color: whitesmoke;
     text-decoration: none;
 }
+
 /*Style the name and age form on index*/
 #entry {
     margin-left: 5px;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -80,12 +93,14 @@ form {
     justify-content: center;
     align-items: center;
 }
+
 #start-button {
     margin-top: 20px;
     border: none;
     color: #fff;
     font-size: xx-large;
 }
+
 #start-button:hover {
     text-shadow:
         0 0 7px #fff,
@@ -97,10 +112,9 @@ form {
         0 0 102px rgb(156, 255, 229),
         0 0 151px rgb(156, 255, 229);
 }
-/*Style the Feedback sign with arrows*/
+/*Style the Feedback text*/
 #feedback {
     text-align: center;
-    font-size: large;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -112,6 +126,7 @@ form {
         0 0 151px rgb(156, 255, 229);
     animation: blinker 4s linear infinite;
 }
+
 /*Style for the buttons after the name and age are provided by user*/
 .nav-btn {
     padding-top: 10px;
@@ -119,21 +134,25 @@ form {
     font-size: xx-large;
     animation: blinker 4s linear infinite;
 }
+
 /*BG and font color on game page */
 #game-body {
     background-color: #000000;
     color: whitesmoke;
     font-family: 'Old Standard TT', sans-serif;
 }
+
 /*Hide elements in header on game page*/
 .hidden-element {
     display: none;
 }
+
 /*Footer on index html*/
 #contact {
     font-size: xx-large;
     margin-left: 5px;
 }
+
 /*Flex for the main on game page*/
 #game {
     display: flex;
@@ -143,9 +162,11 @@ form {
     justify-content: space-evenly;
     align-items: center;
 }
+
 #heading {
     animation: blinker 4s linear infinite;
 }
+
 /*Style for the buttons on the game page*/
 #choices {
     display: flex;
@@ -155,6 +176,7 @@ form {
     align-items: center;
     gap: 20px;
 }
+
 .choice-btn {
     letter-spacing: 1px;
     margin-top: 10px;
@@ -164,7 +186,9 @@ form {
     border: none;
     font-size: large;
     background: transparent;
+    font-family: 'Old Standard TT', sans-serif;
 }
+
 .choice-btn:hover {
     color: #fff;
     text-shadow:
@@ -177,7 +201,8 @@ form {
         0 0 102px rgb(156, 255, 229),
         0 0 151px rgb(156, 255, 229);
 }
-#game h2 {
+
+#heading {
     text-align: center;
     color: #fff;
     text-shadow:
@@ -190,10 +215,12 @@ form {
         0 0 102px #0fa,
         0 0 151px #0fa;
 }
+
 #game-text {
     padding: 5px 10px;
     text-align: center;
 }
+
 /*Style for the a element which will appear after specific choices*/
 #loop-link {
     color: #fff;
@@ -209,15 +236,18 @@ form {
     display: block;
     text-align: center;
 }
+
 /*Padding between footer and video*/
 main {
     padding-bottom: 27px;
 }
+
 /* Go back to the index html */
 #reset-game {
     padding-bottom: 5px;
     font-size: x-large;
 }
+
 /*Neon effect for nav links and a elements*/
 .hover-effects:hover {
     color: #fff;
@@ -231,6 +261,7 @@ main {
         0 0 102px rgb(156, 255, 229),
         0 0 151px rgb(156, 255, 229);
 }
+
 /*Position of the mute/unmute audio button*/
 #audio-btn {
     border: none;
@@ -238,6 +269,7 @@ main {
     font-size: x-large;
     color: whitesmoke;
 }
+
 /* Make the reset and mute/unmute button to fixed postion on the bottom of the page*/
 footer {
     position: fixed;
@@ -251,6 +283,7 @@ footer {
     box-shadow: 0 2px 2px #000000;
     padding-top: 5px;
 }
+
 /* Add flex for the nav logos in footer*/
 #nav-links {
     display: flex;
@@ -260,6 +293,7 @@ footer {
     justify-content: space-around;
     gap: 5px;
 }
+
 /*Style for the video*/
 #video {
     width: 97.5%;
@@ -268,36 +302,45 @@ footer {
     margin-top: 33px;
     padding-left: 10px;
 }
+
 /*Leave empty space on the right side on isntructions*/
 #instructions {
     padding-right: 5px;
 }
+
 /* Media query: large or landscape phones (400px and up)*/
 @media screen and (min-width:400px) {
     #game {
-        font-size: larger;
+        font-size: large;
     }
+
     .choice-btn {
-        font-size: larger;
+        font-size: large;
     }
+
     #game-main {
         padding-bottom: 35px;
     }
+
     body {
         font-size: larger;
     }
 }
+
 /* Media query: tablets (800px and up)*/
 @media screen and (min-width:800px) {
     #game {
         font-size: x-large;
     }
+
     .choice-btn {
-        font-size: 130%;
+        font-size: 110%;
     }
+
     body {
         font-size: xx-large;
     }
+
     #game-text {
         font-size: larger;
     }
