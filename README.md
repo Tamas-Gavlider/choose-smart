@@ -5,7 +5,7 @@ It is a decision-based game where every choice the user makes influences the sto
 Users making critical decisions that shape the narrative, leading to multiple possible endings.<br>
 Choose Smart offers a unique experience where your decisions truly matter.
 
-![amIresponsive ss](docs/testing/am-I-responsive.png)
+![amIresponsive ss]()
 
 [View Choose Smart on Github Pages](https://tamas-gavlider.github.io/choose-smart/)
 
