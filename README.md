@@ -69,11 +69,24 @@ All Pages on the website are responsive and have:
 
 #### Home Page
 
+The home page features the name of the page displayed in a blinking neon green color, and prompts the user to enter their name and age. After the user submits their details and clicks on the 'Start Game' button, a [message](/docs/webpage-ss/home-page-welcome.png) is displayed with the user's [name](/docs/webpage-ss/home-page-welcome-message.png). I ensured that the first letter of the user's name always appears in uppercase with a JS code. The user can navigate to the instructions page by clicking on the 'How to Play?' button or start the game immediately by clicking on 'Start Game'. Both buttons will exhibit a [neon effect](/docs/webpage-ss/hover-effect.png) when the user hovers over them.
+At the bottom of the page, the footer contains a blinking 'Leave your feedback' text alongside an email icon. Clicking the icon opens the user's email client with a prefilled email subject "Feedback".
+![Home Page](/docs/webpage-ss/home-page.png)
+
 #### Instructions Page
+
+The instructions page features a "How to Play?" heading in a blinking neon green color, followed by an introduction to the game. It explains the gameplay, the meaning of [icons](/docs/webpage-ss/game-controls.png) on the instructions and game pages, and suggests playing the game with the [sound on](/docs/webpage-ss/sound-suggestion.png).
+The [footer](/docs/webpage-ss/footer-instructions.png) contains three icons: the first takes the user back to the home page, the second directs them to the game page, and the third allows them to mute or unmute the sound.
+
+![Instructions page](/docs/webpage-ss/instructions-page.png)
 
 #### Game Page
 
+![Game page](/docs/webpage-ss/game-page.png)
+
 #### 404 Error Page
+
+![404 Error page](/docs/webpage-ss/404-page.png)
 
 #### Future Implementations
 
@@ -102,6 +115,8 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 [Favicon.io](https://favicon.io/favicon-converter/#google_vignette) - To create Favicon.
 
 [Pixabay](https://pixabay.com/) - Used to donwload audio and video. 
+
+[FreeConvert](https://www.freeconvert.com/) - Used to reduce the video size.
 
 ## Deployment & Local Development
 

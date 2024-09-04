@@ -27,21 +27,6 @@ body {
 /*Base color for header*/
 header {
     color: whitesmoke;
-    animation: blinker 4s linear infinite;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
-}
-
-.instructions-header {
-    text-align: unset;
-    animation: unset;
 }
 
 /*Blinking text effect*/
@@ -105,38 +90,15 @@ form {
     font-size: xx-large;
 }
 
-#start-button:hover {
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
-}
-
-/*Style the Feedback text and the 404 page header*/
+/*Neon effect if user hover over a button/nav link, and for heading on game page and 
+for a link which appear at specific game path */
+#start-button:hover,
+.return-home:hover,
+.choice-btn:hover,
+.hover-effects:hover,
+#heading,
+#loop-link,
 .message {
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
-    animation: blinker 4s linear infinite;
-}
-
-/*404 page*/
-.error-header {
-    font-size: 400%;
-}
-
-.return-home:hover {
     color: #fff;
     text-shadow:
         0 0 7px #fff,
@@ -147,6 +109,16 @@ form {
         0 0 92px rgb(156, 255, 229),
         0 0 102px rgb(156, 255, 229),
         0 0 151px rgb(156, 255, 229);
+}
+
+/*Style the Feedback text and the headers*/
+.message {
+    animation: blinker 6s linear infinite;
+}
+
+/*404 page*/
+.error-header {
+    font-size: 400%;
 }
 
 /*Style for the buttons after the name and age are provided by user*/
@@ -207,48 +179,12 @@ form {
     z-index: 99;
 }
 
-.choice-btn:hover {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
-}
-
-#heading {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
-}
-
 #game-text {
     padding: 5px 10px;
 }
 
 /*Style for the a element which will appear after specific choices*/
 #loop-link {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
     display: block;
 }
 
@@ -261,20 +197,6 @@ main {
 #reset-game {
     padding-bottom: 5px;
     font-size: x-large;
-}
-
-/*Neon effect for nav links and a elements*/
-.hover-effects:hover {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(156, 255, 229),
-        0 0 82px rgb(156, 255, 229),
-        0 0 92px rgb(156, 255, 229),
-        0 0 102px rgb(156, 255, 229),
-        0 0 151px rgb(156, 255, 229);
 }
 
 /*Position of the mute/unmute audio button*/
