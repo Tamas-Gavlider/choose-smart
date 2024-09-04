@@ -10,6 +10,37 @@ Choose Smart offers a unique experience where your decisions truly matter.
 [View Choose Smart on Github Pages](https://tamas-gavlider.github.io/choose-smart/)
 
 ## Contents
+- [User Experience (UX)](#user-experience-ux)
+  - [User Stories](#user-stories)
+    - [First Time Visitor Goals](#first-time-visitor-goals)
+    - [Returning Visitor Goals](#returning-visitor-goals)
+- [Design](#design)
+   - [Colour Scheme](#colour-scheme)
+   - [Wireframe](#wireframe)
+   - [Typography](#typography)
+   - [Features](#features)
+     - [Home Page](#home-page)
+     - [Instructions Page](#instructions-page)
+     - [Game Page](#game-page)
+     - [404 Error Page](#404-error-page)
+     - [Future implementations](#future-implementations) 
+- [Technologies used](#technologies-used)
+  - [Languages used](#languages-used)
+  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+- [Deployment & Local Development](#deployment--local-development)
+  - [Deployment](#deployment)
+  - [Local Development](#local-development)
+  - [How to Clone](#how-to-clone)
+  - [Testing](#testing)
+  - [W3C Validator](#w3c-validator)
+  - [JavaScript Validator](#javascript-validator)
+  - [Lighthouse](#lighthouse)
+  - [Wave](#wave)
+  - [Full Testing](#full-testing)
+- [Credits](#credits)
+  - [Media](#media)
+  - [Content](#content)
+  - [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
 
@@ -82,13 +113,21 @@ The [footer](/docs/webpage-ss/footer-instructions.png) contains three icons: the
 
 #### Game Page
 
+The game page features a 'Happy Birthday. Wish for something!' welcome message with a blinking green neon effect. This message disappears once the user clicks on the first choice. Initially, the user can choose from three options, each leading to a different outcome in the game.
+The [footer](/docs/webpage-ss/footer-game.png) contains three icons: the first takes the user back to the home page, the second restarts the game from the first choice, and the third allows the user to mute or unmute the sound.
+Some outcomes will result in a [loop](/docs/webpage-ss/loop-text.png). If the user clicks on the text, the game restarts.
+The video and sound change with each choice.
 ![Game page](/docs/webpage-ss/game-page.png)
 
 #### 404 Error Page
 
+The 404 Error page features '404' with a blinking green neon effect, the text 'You shouldn't be here,' and a link to return to the Home page." The [link](/docs/webpage-ss/404-link.png) displays a green neon effect when the user hovers over it.
+
 ![404 Error page](/docs/webpage-ss/404-page.png)
 
 #### Future Implementations
+
+Some choices lead to outcomes with significant potential for a great story. The plan is to expand these stories and develop them into a full game.
 
 ## Technologies used
 
@@ -158,9 +197,9 @@ I have used Chrome Developer tool while building the web page and troubleshoot a
 The following issues were raised during my mid project meeting with my mentor:
 
  - The source code contained too many unnecessary whitespaces and lack of comments.
- - Move the game data into a new js file and import it into the main js file 
- - Main js file included too many if else if statements for audio/video. It can be aggregated with the game data
- - Instructions page had the text on the left side without margin or padding. 
+ - Move the game data into a new js file and import it into the main js file. 
+ - Main js file included too many if else if statements for audio/video. It can be aggregated with the game data.
+ - Instructions page had the text on the left side without margin/padding. 
 
 ### W3C Validator
 
@@ -185,6 +224,7 @@ The [W3C](https://validator.w3.org/) validator was used to validate the HTML on 
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.<br>
+The performance on the game and index pages for mobile were initially below 85, but preloading the fonts improved it.<br>
 [Index for mobile](/docs/testing/lighthouse/lighthouse-index-mobile.png)<br>
 [Index for desktop](/docs/testing/lighthouse/lighthouse-index-desktop.png)<br>
 [Instructions for mobile](/docs/testing/lighthouse/lighthouse-instructions-mobile.png)<br>
@@ -217,6 +257,25 @@ Each device tested the site using the following browsers:
 - Edge
 - Firefox 
 
+#### Home Page
+
+The name and age inputs are required. The form cannot be submitted without filling in both the Name and Age fields. If either field is left empty, the form prompts the user to fill in the missing information.<br>
+When the Name is entered in lowercase, it is automatically converted to uppercase.<br>
+The 'How to Play?' and 'Start Game' buttons have a green neon effect when hovered over. The 'How to Play?' button direct me to the Instructions page, and the 'Start Game' button direct me to the Game page.<br>
+Clicking on the email logo opens the email client. This functionality works in all four browsers.
+
+#### Instructions Page
+
+I tested all three icons in the footer.
+The home icon took me back to the Home page.
+The second icon took me to the Game page.
+The mute/unmute button worked as expected.
+
+
+#### Game Page
+
+#### 404 Error page
+
 ## Credits 
 
 ### Media
@@ -229,3 +288,7 @@ All screenshots used in this README file were taken by myself.
 All content for the website was written by myself. 
 The blinking text effect code in CSS was found at [Stack Overflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
 The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
+
+### Acknowledgements
+
+I would like to acknowledge my Code Institute mentor Graeme Taylor for his valuable advices.
