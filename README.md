@@ -250,7 +250,7 @@ The game page had an error caused by an empty button element. This issue was res
 During testing, I noticed that the buttons do not display the neon effect as they do in other browsers. When I hover over the buttons, the neon effect seems to appear within an invisible border. While this doesn't prevent the user from playing the game, it is quite annoying from a design perspective.
 ![Choice button](/docs/bugs/bug.png)<br>
 ![Mute/unmute button](/docs/bugs/bug-1.png)<br>
-This issue seems to occur with the older version of macOS in Safari. The buttons work fine on a newer OS on iMac but not on the older version of macOS on my MacBook Pro.
+This issue seems to occur with the older version of macOS in Safari. The buttons work fine on a newer OS on iMac but not on the older version of macOS on my MacBook Pro. I tried to fix this bug by using -webkit in CSS, but the issue persists.
 
 ### Full Testing
 
