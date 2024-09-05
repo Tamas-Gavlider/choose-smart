@@ -291,10 +291,10 @@ All screenshots used in this README file were taken by myself.
 
 ### Content
 
-All content for the website was written by me. The decision tree was originally created in a Word document and later transformed into a JavaScript object using [ChatGPT](https://chatgpt.com/).
+All content for the website was written by me. The decision tree was originally created in a Word document and later transformed into a JavaScript object using [ChatGPT](https://chatgpt.com/).<br>
 The blinking text effect code in CSS was found at [Stack Overflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
 I referred to the [Stack Overflow](https://stackoverflow.com/questions/1330825/preloading-font-face-fonts) article to implement font preloading.<br>
-I referred to the [Stack Overflow](https://stackoverflow.com/questions/39360088/does-the-metadata-preload-attribute-in-html5-load-the-entire-video) to improve the game page's performance by preloading the videos.
+I referred to the [Stack Overflow](https://stackoverflow.com/questions/39360088/does-the-metadata-preload-attribute-in-html5-load-the-entire-video) to improve the game page's performance by preloading the videos.<br>
 The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
 
 ### Acknowledgements
