@@ -230,7 +230,7 @@ footer {
 }
 
 /*Style for the video*/
-#video {
+.video {
     width: 97.5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #000000;
@@ -287,13 +287,14 @@ footer {
         font-size: larger;
     }
 
-    #video {
+    .video {
         max-width: 65%;
     }
 }
+
 /* Media query: laptop (1024px and up)*/
 @media screen and (min-width:1024px) {
-    #video {
+    .video {
         max-width: 35%;
     }
 }

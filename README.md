@@ -266,15 +266,21 @@ Clicking on the email logo opens the email client. This functionality works in a
 
 #### Instructions Page
 
-I tested all three icons in the footer.
-The home icon took me back to the Home page.
-The second icon took me to the Game page.
-The mute/unmute button worked as expected.
-
+I tested all three icons in the footer:  
+  - The home icon took me back to the Home page.
+  - The second icon took me to the Game page.
+  - The mute/unmute button worked as expected.
 
 #### Game Page
 
+I clicked through every choice with the audio on, and the specific video and audio played after each selection. In scenarios where the [blinking green neon text](/docs/webpage-ss/loop-text.png) appeared, clicking on it took me back to the first choice. I also tested all three icons in the footer:
+  - The home icon correctly took me back to the Home page.
+  - The second icon successfully restarted the game.
+  - The mute/unmute button functioned as expected.
+
 #### 404 Error page
+
+I clicked the 'Go Home' button, and it correctly took me back to the Home page.
 
 ## Credits 
 
@@ -285,8 +291,10 @@ All screenshots used in this README file were taken by myself.
 
 ### Content
 
-All content for the website was written by myself. 
+All content for the website was written by me. The decision tree was originally created in a Word document and later transformed into a JavaScript object using [ChatGPT](https://chatgpt.com/).
 The blinking text effect code in CSS was found at [Stack Overflow](https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3.).<br>
+I referred to the [Stack Overflow](https://stackoverflow.com/questions/1330825/preloading-font-face-fonts) article to implement font preloading.<br>
+I referred to the [Stack Overflow](https://stackoverflow.com/questions/39360088/does-the-metadata-preload-attribute-in-html5-load-the-entire-video) to improve the game page's performance by preloading the videos.
 The neon effect code was found at [CSS-tricks.com](https://css-tricks.com/how-to-create-neon-text-with-css/).
 
 ### Acknowledgements
