@@ -186,6 +186,7 @@ for a link which appear at specific game path */
 /*Style for the a element which will appear after specific choices*/
 #loop-link {
     display: block;
+
 }
 
 /*Padding between footer and video*/
@@ -236,6 +237,8 @@ footer {
     margin: 0 auto;
     max-width: 85%;
     display: block;
+    border: 1px solid black;
+    border-radius: 2%;
 }
 
 /*Leave empty space on the right side on isntructions*/

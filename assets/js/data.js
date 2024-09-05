@@ -292,7 +292,7 @@ const gamePlay = {
   "312": {
     text: "You spent countless hours trying to figure out how to heal yourself, but it was not possible with the current technology. So what can you do? The greatest mind in the universe? You built a time machine and have been testing it for the last 2 months. You plan to travel 30 years into the future, where modern technology might be able to save your life.\n\nYou turn on the time machine, set the coordinates, and get ready to go. You sit in the time machine and activate it. Everything goes dark.\n\nWhen you open your eyes, you find yourself in a restroom. You wash your face and leave the restroom. You are in a restaurant and feel confused, not knowing what has happened.\n\nYour father, emerging from a box, waves at you and says:",
     choices: {},
-    video: 'birthday.mp4',
+    video: 'time.mp4',
     audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
   },
   "32": {
