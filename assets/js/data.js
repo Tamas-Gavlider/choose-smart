@@ -99,7 +99,7 @@ const gamePlay = {
     audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
   },
   "131": {
-    text: "Your Aperol is finished. You walk to the beach and sit down in the sand. Is this really it? You throw your Aperol into the ocean and start shouting. Is this how it ends? I’ve wanted to be alone my whole life, and now that I finally am happy, the universe takes it from me. It’s not fair! You go back to your house and take a bunch of pills. You return to the beach, sit down in the sand and hum a song. The words barely come out of your mouth. You close your eyes.",
+    text: "You walk to the beach and sit down in the sand. 'Is this really it?' You throw your Aperol into the ocean and start shouting. 'Is this how it ends? I’ve wanted to be alone my whole life, and now that I finally am happy, the universe takes it from me. It’s not fair!' You go back to your house and take a bunch of pills. You return to the beach, sit down in the sand and hum a song. The words barely come out of your mouth. You close your eyes.",
     choices: {},
     video: 'sitting_on_the_beach.mp4',
     audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'

@@ -94,11 +94,23 @@ form {
 for a link which appear at specific game path */
 #start-button:hover,
 .return-home:hover,
-.choice-btn:hover,
 .hover-effects:hover,
 #heading,
 #loop-link,
 .message {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(156, 255, 229),
+        0 0 82px rgb(156, 255, 229),
+        0 0 92px rgb(156, 255, 229),
+        0 0 102px rgb(156, 255, 229),
+        0 0 151px rgb(156, 255, 229);
+}
+
+.choice-btn:hover {
     color: #fff;
     text-shadow:
         0 0 7px #fff,
