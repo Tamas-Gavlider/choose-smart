@@ -25,7 +25,7 @@ const gamePlay = {
     text: "The cancer is cured. Thanks to the cure, many other diseases have also been eradicated. The average lifespan has increased to 90 years, and the world population has reached 10 billion. You wanted to help, but it has only made the world overcrowded. You are in a hospital, barely alive. You unmute the TV to hear the news. People are killing each other to occupy houses. World hunger has returned, affecting every continent. In some cities, people have resorted to cannibalism. You turn off the TV. A tear rolls down your face, and you close your eyes forever.",
     choices: {},
     video: 'street.mp4',
-    audio: 'time.mp3'
+    audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
   },
   "112": {
     text: "You had surgery, and it was successful. You are living an average life again, working at Tesco, helping people at the self-checkouts. No one notices you; no one thanks you. You will not be remembered as the savior of the world. You go home to your rented apartment, watch a movie, and fall asleep. You wake up, and everything starts again, day after day, for the rest of your life.",
@@ -81,13 +81,13 @@ const gamePlay = {
     text: "You get back to your apartment, open a bottle of whiskey, and stare out the window, watching the city lights at night. You have everything, yet you feel like you have nothing. The song reminded you of all the plans you had as a kid—big, great ideas, all of which have been forgotten. You walk out onto the balcony and climb up to the edge. Closing your eyes, you take a step forward. The fall might only last 10 seconds, but for you, it feels like 10 minutes. There’s a theory that your brain replays your entire life before you die. Well, it’s true. You watch the whole movie of your life from the very beginning. Your first steps, your first words, your first heartbreak, your first love, your first disappointments. All these memories will be gone in a moment.",
     choices: {},
     video: 'skyscraper.mp4',
-    audio: 'time.mp3'
+    audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
   },
   "123": {
     text: "You are walking down the street. You can already see the restaurant around the corner when you feel a pressure against your back. 'Give me your phone and wallet,' a deep voice demands from behind. You’re drunk, and as you try to get your wallet out of your pocket, you lose your balance. The thief thinks you’re trying to defend yourself, so he fires the gun. You collapse to the ground, feeling blood in your mouth. The thief runs away as three girls rush to help you. One calls an ambulance while the other two try to stop the bleeding. Cody? Is that you? I never thought I’d see you again... My little boy... I missed you so much... I’m sorry I couldn’t save you... I will never... I will never leave you... again...",
     choices: {},
     video: 'dog.mp4',
-    audio: 'time.mp3'
+    audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
   },
   "13": {
     text: "You open your eyes, feeling the nice breeze. The waves crash as you sip an Aperol Spritz and stare at the ocean. You head back into your house and turn on the TV to check the news. A meteor is heading towards Earth. In 48 hours, it will hit and destroy the planet. What do you want to do?",
@@ -117,7 +117,7 @@ const gamePlay = {
       "2": "Get your private jet and head to a bunker."
     },
     video: 'panic.mp4',
-    audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
+    audio: 'cthulhu-tension-cinematic-209274.mp3'
   },
   "141": {
     text: "No one is answering your calls. No one is replying to your messages. The members of the board meeting have left. You are sitting in your office, staring out of the window from the 60th floor. So this is how it ends? You take a gun from the drawer. Your phone rings. One of the world leaders is calling you back. You pick up the phone. 'Sorry I didn’t call you back right away... But this is the end... No one can handle this.' Bang... someone fired a gun, and the call disconnected.",

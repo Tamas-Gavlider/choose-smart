@@ -285,12 +285,12 @@ footer {
     }
 
     #video {
-        max-width: 75%;
+        max-width: 65%;
     }
 }
 /* Media query: laptop (1024px and up)*/
 @media screen and (min-width:1024px) {
     #video {
-        max-width: 50%;
+        max-width: 35%;
     }
 }
