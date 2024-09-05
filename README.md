@@ -2,7 +2,7 @@
 
 Choose Smart is a responsive website that allows users to view it on range of devices.<br>
 It is a decision-based game where every choice the user makes influences the story and its outcome.<br>
-Users making critical decisions that shape the narrative, leading to multiple possible endings.<br>
+Users make critical decisions that shape the narrative, leading to multiple possible endings.<br>
 Choose Smart offers a unique experience where your decisions truly matter.
 
 ![amIresponsive ss](/docs/testing/am-i-responsive.png)
@@ -50,7 +50,7 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 - I want to play a game that makes me feel like I'm the one driving the story.
 - I want the site to be responsive on my device
-- I want the site to be easy navigate
+- I want the site to be easy to navigate
 
 #### Returning Visitor Goals
 

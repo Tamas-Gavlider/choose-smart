@@ -93,7 +93,6 @@ function changeAudio(newAudio) {
 function changeVideo(newVideo) {
   video.src = 'assets/media/video/' + newVideo;
   video.load();
-
 }
 
 // Gameplay function which initiates the game
