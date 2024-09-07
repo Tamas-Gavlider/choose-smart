@@ -1,3 +1,5 @@
+let form = document.getElementById('entry');
+
 // Get user name and age and submit details to start the game
 
 function getStarted(event) {
@@ -14,7 +16,4 @@ function getStarted(event) {
       <a href='game.html' class='nav-btn hover-effects' id='start-game'>Start Game</a></div>`;
   }
 
-  let form = document.getElementById('entry');
-if (form) {
-  form.addEventListener('submit', getStarted);
-}
+form.addEventListener('submit', getStarted);
