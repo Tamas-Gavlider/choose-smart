@@ -272,6 +272,11 @@ footer {
     body {
         font-size: larger;
     }
+
+    #index-main {
+        padding-bottom: 80px;
+        margin-bottom: 80px;
+    }
 }
 
 /* Media query: tablets (700px and up)*/
