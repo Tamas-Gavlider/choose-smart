@@ -12,6 +12,11 @@ body {
     margin-left: 5px;
 }
 
+#index-main {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
 /*Center the text*/
 
 .centered {
@@ -176,6 +181,9 @@ for a link which appear at specific game path */
     font-size: large;
     background: transparent;
     font-family: 'Old Standard TT', sans-serif;
+}
+
+#choice4 {
     z-index: 99;
 }
 
