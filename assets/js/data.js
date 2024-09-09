@@ -105,7 +105,7 @@ const gamePlay = {
     audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'
   },
   "132": {
-    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know' your father says. You stay with your family for the last hours of your life. You feel relieved, knowing you made the right choice.",
+    text: "Your plane just landed in your hometown. No one knows you’re coming. You stand in front of the house where you grew up and knock on the door. Your father opens it. There are so many things you want to say, and he wants to say, but neither of you can find the words. You just hug him and start crying. 'I know, I know' your father says. You are having your last dinner together. Everyone is happy, and it feels like one of those family dinners when you were 10. After lunch, the whole family is sitting in the living room. Suddenly, the pictures on the wall fall off, the earth starts shaking, and from outside, you hear people shouting, 'Look, it's so close!' Your dad hugs you and whispers in your ear, 'I am proud of you, my son.'",
     choices: {},
     video: 'father.mp4',
     audio: 'sad-moment-sad-and-melancholy-piano-background-music-124488.mp3'

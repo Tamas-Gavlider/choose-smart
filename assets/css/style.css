@@ -91,16 +91,13 @@ form {
 #start-button {
     margin-top: 20px;
     border: none;
-    color: #fff;
     font-size: xx-large;
 }
 
 /*Neon effect if user hover over a button/nav link, and for heading on game page and 
 for a link which appear at specific game path */
 #start-button:hover,
-.return-home:hover,
 .hover-effects:hover,
-.choice-btn:hover,
 #heading,
 #loop-link,
 .message {

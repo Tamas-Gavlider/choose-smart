@@ -1,9 +1,8 @@
 import gamePlay from './data.js';
 
-let audioSource = document.getElementById('audioSource');
-let sound = document.getElementById('audio');
-
-let video = document.getElementById('video');
+const audioSource = document.getElementById('audioSource');
+const sound = document.getElementById('audio');
+const video = document.getElementById('video');
 
 // User choices
 const choice1 = document.getElementById('choice1');
