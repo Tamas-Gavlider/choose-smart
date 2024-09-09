@@ -1,7 +1,7 @@
-// Mute/unmute audio 
 let sound = document.getElementById('audio');
 let soundtrackButton = document.getElementById('audio-btn');
 
+// Mute/unmute audio 
 function controlMusic() {
     if (sound.muted) {
       sound.muted = false;

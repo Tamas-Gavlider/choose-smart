@@ -30,7 +30,7 @@
         <div id="game" class="flex">
             <p id="heading" class="centered">Happy Birthday. Wish for something!</p>
             <p id="game-text" class="centered"></p>
-            <!--Starting 3 choices-->
+            <!--First 3 choices-->
             <div id="choices" class='flex'>
                 <button class="choice-btn" id="choice1" aria-label="choice 1">
                     Be rich!
@@ -52,6 +52,7 @@
         </div>
         <!--Div for loop back to the start at specific scenarios-->
         <div id="loop"></div>
+        <!--Video-->
         <video preload="auto" autoplay loop muted playsinline class="video" id="video">
             <source src="assets/media/video/birthday.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -69,19 +70,17 @@
             <!--Soundtrack with mute/unmute button-->
             <audio id="audio" loop autoplay muted>
                 <source src="assets/media/audio/happy-birthday-220024.mp3" id="audioSource" type="audio/mpeg">
-
                 <span>
                     Your browser doesn't support HTML5 audio:
                 </span>
             </audio>
-
             <button type="submit" id="audio-btn" class="hover-effects" aria-label="mute/unmute sound"><i
-                    class="fa-solid fa-volume-xmark"></i></button>
+                    class="fa-solid fa-volume-xmark"></i>
+            </button>
         </div>
     </footer>
     <!--Font awesome kit for mute/unmute logo-->
     <script src="https://kit.fontawesome.com/7b140d41c7.js" crossorigin="anonymous"></script>
-
     <script type="module" src="assets/js/main.js"></script>
     <script src="assets/js/audio.js"></script>
 </body>
