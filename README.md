@@ -7,7 +7,7 @@ Choose Smart offers a unique experience where your decisions truly matter.
 
 ![amIresponsive ss](/docs/testing/am-i-responsive.png)
 
-[View Choose Smart on Github Pages](https://tamas-gavlider.github.io/choose-smart/)
+[View Choose Smart on Github Pages](https://cryptopadre.github.io/choose-smart/)
 
 ## Contents
 - [User Experience (UX)](#user-experience-ux)
